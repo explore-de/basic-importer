@@ -1,8 +1,12 @@
 # basic-importer
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+This project showcases how to import a basic BOM structure into the explore 
+platform. It sends the pre-built BOM tree structure to a Kafka topic, where 
+it will be consumed and imported by the explore plattform. Additional 
+information can be found in your local and individual explore documentation 
+plattform. 
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+This project uses Quarkus, the Supersonic Subatomic Java Framework. If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 
 ## Running the application in dev mode
 
