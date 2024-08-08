@@ -19,6 +19,6 @@ public class LifecycleBean
 		// encoder
 		// we need this because we had problems with encoding objects in avro
 		System.setProperty("org.apache.avro.specific.use_custom_coders", "true");
-		LOG.info("The application is starting...");
+		LOG.info("The basic importer is starting...");
 	}
 }
