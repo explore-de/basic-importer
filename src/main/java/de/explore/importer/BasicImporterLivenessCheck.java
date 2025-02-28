@@ -1,4 +1,4 @@
-package de.exentra.explore.basic.importer;
+package de.explore.importer;
 
 import org.eclipse.microprofile.health.HealthCheck;
 import org.eclipse.microprofile.health.HealthCheckResponse;

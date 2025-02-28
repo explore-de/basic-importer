@@ -1,0 +1,492 @@
+Level,Part ID,Component,Description,Quantity,Material,Supplier,Unit Cost,Total Cost,3D Modell
+1,TR-001,Zug Gesamt,Kompletter Zug bestehend aus Lokomotive und Wagen,1,Composite/Aluminium/Steel,DeutscheZug GmbH,0,0,CAD_TR-001.cad
+2,LO-001,Lokomotive,Diesel- oder Elektroantriebseinheit,1,Steel/Aluminium,LocomotiveWorks,500000,500000,CAD_LO-001.cad
+3,LO-001-01,Motorblock,Diesel- oder Elektromotor,1,Steel/Cast Iron,EngineWorks,200000,200000,CAD_LO-001-01.cad
+3,LO-001-02,Getriebe,Übersetzungsverhältnis-Optimierer,1,Steel,GearTech,80000,80000,CAD_LO-001-02.cad
+3,LO-001-03,Kupplung,Verbindet Motor und Getriebe,1,Steel,ClutchMasters,15000,15000,CAD_LO-001-03.cad
+3,LO-001-04,Elektroniksteuerung,Steuert Motorleistung und Energie,1,PCB/Chipset,ElectroControl,25000,25000,CAD_LO-001-04.cad
+3,LO-001-05,Kühlaggregat,Motor- und Getriebe-Kühlung,1,Aluminium,CoolTech,12000,12000,CAD_LO-001-05.cad
+3,LO-001-06,Bremssystem,Hydraulische Bremsen,1,Steel,BrakeSystems,18000,18000,CAD_LO-001-06.cad
+3,LO-001-07,Treibwerksrahmen,Strukturelles Gerüst der Lokomotive,1,Steel,FrameTech,35000,35000,CAD_LO-001-07.cad
+3,LO-001-08,Kraftstoffsystem,Tank Leitungen und Filter,1,Composite/Steel,FuelSystems,10000,10000,CAD_LO-001-08.cad
+3,LO-001-09,Auspuffsystem,Abgasanlage,1,Steel,ExhaustWorks,8000,8000,CAD_LO-001-09.cad
+3,LO-001-10,Elektrisches Bordnetz,Verkabelung und Sicherungen,1,Copper/Plastic,WiringTech,9000,9000,CAD_LO-001-10.cad
+3,LO-001-11,Fahrerkabine,Steuer- und Bedienbereich,1,Composite/Glass,CabinWorks,22000,22000,CAD_LO-001-11.cad
+3,LO-001-12,Drehzahlregler,Steuert die Motordrehzahl,1,Steel/Electronic,SpeedControl,7000,7000,CAD_LO-001-12.cad
+3,LO-001-13,Kühlmittelpumpe,Zirkuliert Kühlmittel,1,Steel/Plastic,PumpTech,4000,4000,CAD_LO-001-13.cad
+3,LO-001-14,Getriebeölkühler,Hält Getriebeöltemperatur niedrig,1,Aluminium,CoolGear,3500,3500,CAD_LO-001-14.cad
+3,LO-001-15,Luftfilter,Reinigung der Zuluft,1,Composite,FilterCorp,2000,2000,CAD_LO-001-15.cad
+3,LO-001-16,Elektrische Sensoren,Überwachung von Betriebsparametern,5,Electronic,SensorTech,500,2500,CAD_LO-001-16.cad
+3,LO-001-17,Bordnetzsteuergerät,Steuerungselektronik,1,Electronic/Plastic,ControlSys,6000,6000,CAD_LO-001-17.cad
+3,LO-001-18,Notbremse,Zusätzliche Sicherheitseinrichtung,1,Steel,BrakeSystems,3000,3000,CAD_LO-001-18.cad
+3,LO-001-19,Hydrauliksystem,Steuerung der Bremsen und Kupplung,1,Hydraulic/Steel,HydroTech,9000,9000,CAD_LO-001-19.cad
+3,LO-001-20,Diagnosesystem,Fehlererkennung und -diagnose,1,Electronic,DiagTech,5000,5000,CAD_LO-001-20.cad
+2,WG-001,Wagen 1,Passagierwagen - Wagen 1,1,Steel/Aluminium,WagonBuilders,300000,300000,CAD_WG-001.cad
+3,WG-001-01,Fahrgestell,Chassis des Wagens,1,Stahl,WagonFrames,30000,30000,CAD_WG-001-01.cad
+3,WG-001-02,Bodenplatte,Boden des Wagens,1,Aluminium,FloorTech,15000,15000,CAD_WG-001-02.cad
+3,WG-001-03,Dachstruktur,Tragende Dachkonstruktion,1,Aluminium,RoofWorks,12000,12000,CAD_WG-001-03.cad
+3,WG-001-04,Seitenwände,Seitliche Verkleidung,2,Aluminium/Glas,PanelCorp,8000,16000,CAD_WG-001-04.cad
+3,WG-001-05,Fenster,Glasfenster,8,Glas,WindowMakers,1000,8000,CAD_WG-001-05.cad
+3,WG-001-06,Türen,Ein- und Ausstiegstüren,2,Aluminium,DoorTech,2000,4000,CAD_WG-001-06.cad
+3,WG-001-07,Innenverkleidung,Innenraumverkleidung,1,Composite,InteriorDesign,5000,5000,CAD_WG-001-07.cad
+3,WG-001-08,Sitzreihen,Sitzgelegenheiten,20,Stoff/Steel,SeatingCo,300,6000,CAD_WG-001-08.cad
+3,WG-001-09,Gepäckablage,Ablagefläche für Gepäck,1,Stahl,StorageSolutions,2500,2500,CAD_WG-001-09.cad
+3,WG-001-10,Klimaanlage,Klimaanlage,1,Aluminium/Plastic,ClimateControl,4000,4000,CAD_WG-001-10.cad
+3,WG-001-11,Heizsystem,Heizsystem,1,Stahl,HeatTech,3500,3500,CAD_WG-001-11.cad
+3,WG-001-12,Elektrische Verkabelung,Verkabelungssystem,1,Kupfer/Plastic,CableCorp,2000,2000,CAD_WG-001-12.cad
+3,WG-001-13,Beleuchtungssystem,Innenbeleuchtung,1,LED/Plastic,LightWorks,1500,1500,CAD_WG-001-13.cad
+3,WG-001-14,Bordnetz,Elektronisches Netz,1,Electronic/Kupfer,NetTech,2200,2200,CAD_WG-001-14.cad
+3,WG-001-15,Sicherheitsausstattung,Sicherheitsausrüstung,1,Stahl/Plastic,SafeSystems,1800,1800,CAD_WG-001-15.cad
+3,WG-001-16,Notbremsvorrichtung,Notbremsvorrichtung,1,Stahl,BrakeSafety,2500,2500,CAD_WG-001-16.cad
+3,WG-001-17,Infotainmentsystem,Infotainmentsystem,1,Electronic/Plastic,InfoTech,3000,3000,CAD_WG-001-17.cad
+3,WG-001-18,Reinigungssystem,Reinigungseinheit,1,Composite,CleanTech,1200,1200,CAD_WG-001-18.cad
+3,WG-001-19,Bodenbelag,Bodenbelag,1,Vinyl,FloorCover,800,800,CAD_WG-001-19.cad
+3,WG-001-20,Akustikdämmung,Schallschutzdämmung,1,Schallschutzmaterial,AcoustiCorp,1600,1600,CAD_WG-001-20.cad
+3,WG-001-21,Stahlrahmen,Struktureller Stahlrahmen,1,Stahl,FrameWorks,3500,3500,CAD_WG-001-21.cad
+3,WG-001-22,Isolationsmaterial,Dämmmaterial,1,Schaumstoff,InsulTech,900,900,CAD_WG-001-22.cad
+3,WG-001-23,Kunststoffverkleidung,Verkleidung aus Kunststoff,1,Kunststoff,PlasticDesign,1100,1100,CAD_WG-001-23.cad
+3,WG-001-24,Wartungszugang,Wartungszugangspunkte,4,Aluminium,AccessSystems,700,2800,CAD_WG-001-24.cad
+3,WG-001-25,Kabelkanäle,Kabelkanäle,1,Plastic,CableSolutions,600,600,CAD_WG-001-25.cad
+3,WG-001-26,Notfallbeleuchtung,Notfallbeleuchtung,1,LED/Plastic,LightWorks,900,900,CAD_WG-001-26.cad
+3,WG-001-27,Lüftungssystem,Lüftungssystem,1,Aluminium,VentTech,1300,1300,CAD_WG-001-27.cad
+3,WG-001-28,Wartungswerkzeug,Wartungswerkzeug,1,Stahl,ToolMakers,500,500,CAD_WG-001-28.cad
+3,WG-001-29,Zugänglichkeitseinrichtung,Einrichtungen für Barrierefreiheit,1,Aluminium,AccessTech,1200,1200,CAD_WG-001-29.cad
+2,WG-002,Wagen 2,Passagierwagen - Wagen 2,1,Steel/Aluminium,WagonBuilders,310000,310000,CAD_WG-002.cad
+3,WG-002-01,Fahrgestell,Chassis des Wagens,1,Stahl,WagonFrames,30000,30000,CAD_WG-002-01.cad
+3,WG-002-02,Bodenplatte,Boden des Wagens,1,Aluminium,FloorTech,15000,15000,CAD_WG-002-02.cad
+3,WG-002-03,Dachstruktur,Tragende Dachkonstruktion,1,Aluminium,RoofWorks,12000,12000,CAD_WG-002-03.cad
+3,WG-002-04,Seitenwände,Seitliche Verkleidung,2,Aluminium/Glas,PanelCorp,8000,16000,CAD_WG-002-04.cad
+3,WG-002-05,Fenster,Glasfenster,8,Glas,WindowMakers,1000,8000,CAD_WG-002-05.cad
+3,WG-002-06,Türen,Ein- und Ausstiegstüren,2,Aluminium,DoorTech,2000,4000,CAD_WG-002-06.cad
+3,WG-002-07,Innenverkleidung,Innenraumverkleidung,1,Composite,InteriorDesign,5000,5000,CAD_WG-002-07.cad
+3,WG-002-08,Sitzreihen,Sitzgelegenheiten,20,Stoff/Steel,SeatingCo,300,6000,CAD_WG-002-08.cad
+3,WG-002-09,Gepäckablage,Ablagefläche für Gepäck,1,Stahl,StorageSolutions,2500,2500,CAD_WG-002-09.cad
+3,WG-002-10,Klimaanlage,Klimaanlage,1,Aluminium/Plastic,ClimateControl,4000,4000,CAD_WG-002-10.cad
+3,WG-002-11,Heizsystem,Heizsystem,1,Stahl,HeatTech,3500,3500,CAD_WG-002-11.cad
+3,WG-002-12,Elektrische Verkabelung,Verkabelungssystem,1,Kupfer/Plastic,CableCorp,2000,2000,CAD_WG-002-12.cad
+3,WG-002-13,Beleuchtungssystem,Innenbeleuchtung,1,LED/Plastic,LightWorks,1500,1500,CAD_WG-002-13.cad
+3,WG-002-14,Bordnetz,Elektronisches Netz,1,Electronic/Kupfer,NetTech,2200,2200,CAD_WG-002-14.cad
+3,WG-002-15,Sicherheitsausstattung,Sicherheitsausrüstung,1,Stahl/Plastic,SafeSystems,1800,1800,CAD_WG-002-15.cad
+3,WG-002-16,Notbremsvorrichtung,Notbremsvorrichtung,1,Stahl,BrakeSafety,2500,2500,CAD_WG-002-16.cad
+3,WG-002-17,Infotainmentsystem,Infotainmentsystem,1,Electronic/Plastic,InfoTech,3000,3000,CAD_WG-002-17.cad
+3,WG-002-18,Reinigungssystem,Reinigungseinheit,1,Composite,CleanTech,1200,1200,CAD_WG-002-18.cad
+3,WG-002-19,Bodenbelag,Bodenbelag,1,Vinyl,FloorCover,800,800,CAD_WG-002-19.cad
+3,WG-002-20,Akustikdämmung,Schallschutzdämmung,1,Schallschutzmaterial,AcoustiCorp,1600,1600,CAD_WG-002-20.cad
+3,WG-002-21,Stahlrahmen,Struktureller Stahlrahmen,1,Stahl,FrameWorks,3500,3500,CAD_WG-002-21.cad
+3,WG-002-22,Isolationsmaterial,Dämmmaterial,1,Schaumstoff,InsulTech,900,900,CAD_WG-002-22.cad
+3,WG-002-23,Kunststoffverkleidung,Verkleidung aus Kunststoff,1,Kunststoff,PlasticDesign,1100,1100,CAD_WG-002-23.cad
+3,WG-002-24,Wartungszugang,Wartungszugangspunkte,4,Aluminium,AccessSystems,700,2800,CAD_WG-002-24.cad
+3,WG-002-25,Kabelkanäle,Kabelkanäle,1,Plastic,CableSolutions,600,600,CAD_WG-002-25.cad
+3,WG-002-26,Notfallbeleuchtung,Notfallbeleuchtung,1,LED/Plastic,LightWorks,900,900,CAD_WG-002-26.cad
+3,WG-002-27,Lüftungssystem,Lüftungssystem,1,Aluminium,VentTech,1300,1300,CAD_WG-002-27.cad
+3,WG-002-28,Wartungswerkzeug,Wartungswerkzeug,1,Stahl,ToolMakers,500,500,CAD_WG-002-28.cad
+3,WG-002-29,Zugänglichkeitseinrichtung,Einrichtungen für Barrierefreiheit,1,Aluminium,AccessTech,1200,1200,CAD_WG-002-29.cad
+2,WG-003,Wagen 3,Passagierwagen - Wagen 3,1,Steel/Aluminium,WagonBuilders,320000,320000,CAD_WG-003.cad
+3,WG-003-01,Fahrgestell,Chassis des Wagens,1,Stahl,WagonFrames,30000,30000,CAD_WG-003-01.cad
+3,WG-003-02,Bodenplatte,Boden des Wagens,1,Aluminium,FloorTech,15000,15000,CAD_WG-003-02.cad
+3,WG-003-03,Dachstruktur,Tragende Dachkonstruktion,1,Aluminium,RoofWorks,12000,12000,CAD_WG-003-03.cad
+3,WG-003-04,Seitenwände,Seitliche Verkleidung,2,Aluminium/Glas,PanelCorp,8000,16000,CAD_WG-003-04.cad
+3,WG-003-05,Fenster,Glasfenster,8,Glas,WindowMakers,1000,8000,CAD_WG-003-05.cad
+3,WG-003-06,Türen,Ein- und Ausstiegstüren,2,Aluminium,DoorTech,2000,4000,CAD_WG-003-06.cad
+3,WG-003-07,Innenverkleidung,Innenraumverkleidung,1,Composite,InteriorDesign,5000,5000,CAD_WG-003-07.cad
+3,WG-003-08,Sitzreihen,Sitzgelegenheiten,20,Stoff/Steel,SeatingCo,300,6000,CAD_WG-003-08.cad
+3,WG-003-09,Gepäckablage,Ablagefläche für Gepäck,1,Stahl,StorageSolutions,2500,2500,CAD_WG-003-09.cad
+3,WG-003-10,Klimaanlage,Klimaanlage,1,Aluminium/Plastic,ClimateControl,4000,4000,CAD_WG-003-10.cad
+3,WG-003-11,Heizsystem,Heizsystem,1,Stahl,HeatTech,3500,3500,CAD_WG-003-11.cad
+3,WG-003-12,Elektrische Verkabelung,Verkabelungssystem,1,Kupfer/Plastic,CableCorp,2000,2000,CAD_WG-003-12.cad
+3,WG-003-13,Beleuchtungssystem,Innenbeleuchtung,1,LED/Plastic,LightWorks,1500,1500,CAD_WG-003-13.cad
+3,WG-003-14,Bordnetz,Elektronisches Netz,1,Electronic/Kupfer,NetTech,2200,2200,CAD_WG-003-14.cad
+3,WG-003-15,Sicherheitsausstattung,Sicherheitsausrüstung,1,Stahl/Plastic,SafeSystems,1800,1800,CAD_WG-003-15.cad
+3,WG-003-16,Notbremsvorrichtung,Notbremsvorrichtung,1,Stahl,BrakeSafety,2500,2500,CAD_WG-003-16.cad
+3,WG-003-17,Infotainmentsystem,Infotainmentsystem,1,Electronic/Plastic,InfoTech,3000,3000,CAD_WG-003-17.cad
+3,WG-003-18,Reinigungssystem,Reinigungseinheit,1,Composite,CleanTech,1200,1200,CAD_WG-003-18.cad
+3,WG-003-19,Bodenbelag,Bodenbelag,1,Vinyl,FloorCover,800,800,CAD_WG-003-19.cad
+3,WG-003-20,Akustikdämmung,Schallschutzdämmung,1,Schallschutzmaterial,AcoustiCorp,1600,1600,CAD_WG-003-20.cad
+3,WG-003-21,Stahlrahmen,Struktureller Stahlrahmen,1,Stahl,FrameWorks,3500,3500,CAD_WG-003-21.cad
+3,WG-003-22,Isolationsmaterial,Dämmmaterial,1,Schaumstoff,InsulTech,900,900,CAD_WG-003-22.cad
+3,WG-003-23,Kunststoffverkleidung,Verkleidung aus Kunststoff,1,Kunststoff,PlasticDesign,1100,1100,CAD_WG-003-23.cad
+3,WG-003-24,Wartungszugang,Wartungszugangspunkte,4,Aluminium,AccessSystems,700,2800,CAD_WG-003-24.cad
+3,WG-003-25,Kabelkanäle,Kabelkanäle,1,Plastic,CableSolutions,600,600,CAD_WG-003-25.cad
+3,WG-003-26,Notfallbeleuchtung,Notfallbeleuchtung,1,LED/Plastic,LightWorks,900,900,CAD_WG-003-26.cad
+3,WG-003-27,Lüftungssystem,Lüftungssystem,1,Aluminium,VentTech,1300,1300,CAD_WG-003-27.cad
+3,WG-003-28,Wartungswerkzeug,Wartungswerkzeug,1,Stahl,ToolMakers,500,500,CAD_WG-003-28.cad
+3,WG-003-29,Zugänglichkeitseinrichtung,Einrichtungen für Barrierefreiheit,1,Aluminium,AccessTech,1200,1200,CAD_WG-003-29.cad
+2,WG-004,Wagen 4,Passagierwagen - Wagen 4,1,Steel/Aluminium,WagonBuilders,330000,330000,CAD_WG-004.cad
+3,WG-004-01,Fahrgestell,Chassis des Wagens,1,Stahl,WagonFrames,30000,30000,CAD_WG-004-01.cad
+3,WG-004-02,Bodenplatte,Boden des Wagens,1,Aluminium,FloorTech,15000,15000,CAD_WG-004-02.cad
+3,WG-004-03,Dachstruktur,Tragende Dachkonstruktion,1,Aluminium,RoofWorks,12000,12000,CAD_WG-004-03.cad
+3,WG-004-04,Seitenwände,Seitliche Verkleidung,2,Aluminium/Glas,PanelCorp,8000,16000,CAD_WG-004-04.cad
+3,WG-004-05,Fenster,Glasfenster,8,Glas,WindowMakers,1000,8000,CAD_WG-004-05.cad
+3,WG-004-06,Türen,Ein- und Ausstiegstüren,2,Aluminium,DoorTech,2000,4000,CAD_WG-004-06.cad
+3,WG-004-07,Innenverkleidung,Innenraumverkleidung,1,Composite,InteriorDesign,5000,5000,CAD_WG-004-07.cad
+3,WG-004-08,Sitzreihen,Sitzgelegenheiten,20,Stoff/Steel,SeatingCo,300,6000,CAD_WG-004-08.cad
+3,WG-004-09,Gepäckablage,Ablagefläche für Gepäck,1,Stahl,StorageSolutions,2500,2500,CAD_WG-004-09.cad
+3,WG-004-10,Klimaanlage,Klimaanlage,1,Aluminium/Plastic,ClimateControl,4000,4000,CAD_WG-004-10.cad
+3,WG-004-11,Heizsystem,Heizsystem,1,Stahl,HeatTech,3500,3500,CAD_WG-004-11.cad
+3,WG-004-12,Elektrische Verkabelung,Verkabelungssystem,1,Kupfer/Plastic,CableCorp,2000,2000,CAD_WG-004-12.cad
+3,WG-004-13,Beleuchtungssystem,Innenbeleuchtung,1,LED/Plastic,LightWorks,1500,1500,CAD_WG-004-13.cad
+3,WG-004-14,Bordnetz,Elektronisches Netz,1,Electronic/Kupfer,NetTech,2200,2200,CAD_WG-004-14.cad
+3,WG-004-15,Sicherheitsausstattung,Sicherheitsausrüstung,1,Stahl/Plastic,SafeSystems,1800,1800,CAD_WG-004-15.cad
+3,WG-004-16,Notbremsvorrichtung,Notbremsvorrichtung,1,Stahl,BrakeSafety,2500,2500,CAD_WG-004-16.cad
+3,WG-004-17,Infotainmentsystem,Infotainmentsystem,1,Electronic/Plastic,InfoTech,3000,3000,CAD_WG-004-17.cad
+3,WG-004-18,Reinigungssystem,Reinigungseinheit,1,Composite,CleanTech,1200,1200,CAD_WG-004-18.cad
+3,WG-004-19,Bodenbelag,Bodenbelag,1,Vinyl,FloorCover,800,800,CAD_WG-004-19.cad
+3,WG-004-20,Akustikdämmung,Schallschutzdämmung,1,Schallschutzmaterial,AcoustiCorp,1600,1600,CAD_WG-004-20.cad
+3,WG-004-21,Stahlrahmen,Struktureller Stahlrahmen,1,Stahl,FrameWorks,3500,3500,CAD_WG-004-21.cad
+3,WG-004-22,Isolationsmaterial,Dämmmaterial,1,Schaumstoff,InsulTech,900,900,CAD_WG-004-22.cad
+3,WG-004-23,Kunststoffverkleidung,Verkleidung aus Kunststoff,1,Kunststoff,PlasticDesign,1100,1100,CAD_WG-004-23.cad
+3,WG-004-24,Wartungszugang,Wartungszugangspunkte,4,Aluminium,AccessSystems,700,2800,CAD_WG-004-24.cad
+3,WG-004-25,Kabelkanäle,Kabelkanäle,1,Plastic,CableSolutions,600,600,CAD_WG-004-25.cad
+3,WG-004-26,Notfallbeleuchtung,Notfallbeleuchtung,1,LED/Plastic,LightWorks,900,900,CAD_WG-004-26.cad
+3,WG-004-27,Lüftungssystem,Lüftungssystem,1,Aluminium,VentTech,1300,1300,CAD_WG-004-27.cad
+3,WG-004-28,Wartungswerkzeug,Wartungswerkzeug,1,Stahl,ToolMakers,500,500,CAD_WG-004-28.cad
+3,WG-004-29,Zugänglichkeitseinrichtung,Einrichtungen für Barrierefreiheit,1,Aluminium,AccessTech,1200,1200,CAD_WG-004-29.cad
+2,WG-005,Wagen 5,Passagierwagen - Wagen 5,1,Steel/Aluminium,WagonBuilders,340000,340000,CAD_WG-005.cad
+3,WG-005-01,Fahrgestell,Chassis des Wagens,1,Stahl,WagonFrames,30000,30000,CAD_WG-005-01.cad
+3,WG-005-02,Bodenplatte,Boden des Wagens,1,Aluminium,FloorTech,15000,15000,CAD_WG-005-02.cad
+3,WG-005-03,Dachstruktur,Tragende Dachkonstruktion,1,Aluminium,RoofWorks,12000,12000,CAD_WG-005-03.cad
+3,WG-005-04,Seitenwände,Seitliche Verkleidung,2,Aluminium/Glas,PanelCorp,8000,16000,CAD_WG-005-04.cad
+3,WG-005-05,Fenster,Glasfenster,8,Glas,WindowMakers,1000,8000,CAD_WG-005-05.cad
+3,WG-005-06,Türen,Ein- und Ausstiegstüren,2,Aluminium,DoorTech,2000,4000,CAD_WG-005-06.cad
+3,WG-005-07,Innenverkleidung,Innenraumverkleidung,1,Composite,InteriorDesign,5000,5000,CAD_WG-005-07.cad
+3,WG-005-08,Sitzreihen,Sitzgelegenheiten,20,Stoff/Steel,SeatingCo,300,6000,CAD_WG-005-08.cad
+3,WG-005-09,Gepäckablage,Ablagefläche für Gepäck,1,Stahl,StorageSolutions,2500,2500,CAD_WG-005-09.cad
+3,WG-005-10,Klimaanlage,Klimaanlage,1,Aluminium/Plastic,ClimateControl,4000,4000,CAD_WG-005-10.cad
+3,WG-005-11,Heizsystem,Heizsystem,1,Stahl,HeatTech,3500,3500,CAD_WG-005-11.cad
+3,WG-005-12,Elektrische Verkabelung,Verkabelungssystem,1,Kupfer/Plastic,CableCorp,2000,2000,CAD_WG-005-12.cad
+3,WG-005-13,Beleuchtungssystem,Innenbeleuchtung,1,LED/Plastic,LightWorks,1500,1500,CAD_WG-005-13.cad
+3,WG-005-14,Bordnetz,Elektronisches Netz,1,Electronic/Kupfer,NetTech,2200,2200,CAD_WG-005-14.cad
+3,WG-005-15,Sicherheitsausstattung,Sicherheitsausrüstung,1,Stahl/Plastic,SafeSystems,1800,1800,CAD_WG-005-15.cad
+3,WG-005-16,Notbremsvorrichtung,Notbremsvorrichtung,1,Stahl,BrakeSafety,2500,2500,CAD_WG-005-16.cad
+3,WG-005-17,Infotainmentsystem,Infotainmentsystem,1,Electronic/Plastic,InfoTech,3000,3000,CAD_WG-005-17.cad
+3,WG-005-18,Reinigungssystem,Reinigungseinheit,1,Composite,CleanTech,1200,1200,CAD_WG-005-18.cad
+3,WG-005-19,Bodenbelag,Bodenbelag,1,Vinyl,FloorCover,800,800,CAD_WG-005-19.cad
+3,WG-005-20,Akustikdämmung,Schallschutzdämmung,1,Schallschutzmaterial,AcoustiCorp,1600,1600,CAD_WG-005-20.cad
+3,WG-005-21,Stahlrahmen,Struktureller Stahlrahmen,1,Stahl,FrameWorks,3500,3500,CAD_WG-005-21.cad
+3,WG-005-22,Isolationsmaterial,Dämmmaterial,1,Schaumstoff,InsulTech,900,900,CAD_WG-005-22.cad
+3,WG-005-23,Kunststoffverkleidung,Verkleidung aus Kunststoff,1,Kunststoff,PlasticDesign,1100,1100,CAD_WG-005-23.cad
+3,WG-005-24,Wartungszugang,Wartungszugangspunkte,4,Aluminium,AccessSystems,700,2800,CAD_WG-005-24.cad
+3,WG-005-25,Kabelkanäle,Kabelkanäle,1,Plastic,CableSolutions,600,600,CAD_WG-005-25.cad
+3,WG-005-26,Notfallbeleuchtung,Notfallbeleuchtung,1,LED/Plastic,LightWorks,900,900,CAD_WG-005-26.cad
+3,WG-005-27,Lüftungssystem,Lüftungssystem,1,Aluminium,VentTech,1300,1300,CAD_WG-005-27.cad
+3,WG-005-28,Wartungswerkzeug,Wartungswerkzeug,1,Stahl,ToolMakers,500,500,CAD_WG-005-28.cad
+2,WG-006,Wagen 6,Passagierwagen - Wagen 6,1,Steel/Aluminium,WagonBuilders,350000,350000,CAD_WG-006.cad
+3,WG-006-01,Fahrgestell,Chassis des Wagens,1,Stahl,WagonFrames,30000,30000,CAD_WG-006-01.cad
+3,WG-006-02,Bodenplatte,Boden des Wagens,1,Aluminium,FloorTech,15000,15000,CAD_WG-006-02.cad
+3,WG-006-03,Dachstruktur,Tragende Dachkonstruktion,1,Aluminium,RoofWorks,12000,12000,CAD_WG-006-03.cad
+3,WG-006-04,Seitenwände,Seitliche Verkleidung,2,Aluminium/Glas,PanelCorp,8000,16000,CAD_WG-006-04.cad
+3,WG-006-05,Fenster,Glasfenster,8,Glas,WindowMakers,1000,8000,CAD_WG-006-05.cad
+3,WG-006-06,Türen,Ein- und Ausstiegstüren,2,Aluminium,DoorTech,2000,4000,CAD_WG-006-06.cad
+3,WG-006-07,Innenverkleidung,Innenraumverkleidung,1,Composite,InteriorDesign,5000,5000,CAD_WG-006-07.cad
+3,WG-006-08,Sitzreihen,Sitzgelegenheiten,20,Stoff/Steel,SeatingCo,300,6000,CAD_WG-006-08.cad
+3,WG-006-09,Gepäckablage,Ablagefläche für Gepäck,1,Stahl,StorageSolutions,2500,2500,CAD_WG-006-09.cad
+3,WG-006-10,Klimaanlage,Klimaanlage,1,Aluminium/Plastic,ClimateControl,4000,4000,CAD_WG-006-10.cad
+3,WG-006-11,Heizsystem,Heizsystem,1,Stahl,HeatTech,3500,3500,CAD_WG-006-11.cad
+3,WG-006-12,Elektrische Verkabelung,Verkabelungssystem,1,Kupfer/Plastic,CableCorp,2000,2000,CAD_WG-006-12.cad
+3,WG-006-13,Beleuchtungssystem,Innenbeleuchtung,1,LED/Plastic,LightWorks,1500,1500,CAD_WG-006-13.cad
+3,WG-006-14,Bordnetz,Elektronisches Netz,1,Electronic/Kupfer,NetTech,2200,2200,CAD_WG-006-14.cad
+3,WG-006-15,Sicherheitsausstattung,Sicherheitsausrüstung,1,Stahl/Plastic,SafeSystems,1800,1800,CAD_WG-006-15.cad
+3,WG-006-16,Notbremsvorrichtung,Notbremsvorrichtung,1,Stahl,BrakeSafety,2500,2500,CAD_WG-006-16.cad
+3,WG-006-17,Infotainmentsystem,Infotainmentsystem,1,Electronic/Plastic,InfoTech,3000,3000,CAD_WG-006-17.cad
+3,WG-006-18,Reinigungssystem,Reinigungseinheit,1,Composite,CleanTech,1200,1200,CAD_WG-006-18.cad
+3,WG-006-19,Bodenbelag,Bodenbelag,1,Vinyl,FloorCover,800,800,CAD_WG-006-19.cad
+3,WG-006-20,Akustikdämmung,Schallschutzdämmung,1,Schallschutzmaterial,AcoustiCorp,1600,1600,CAD_WG-006-20.cad
+3,WG-006-21,Stahlrahmen,Struktureller Stahlrahmen,1,Stahl,FrameWorks,3500,3500,CAD_WG-006-21.cad
+3,WG-006-22,Isolationsmaterial,Dämmmaterial,1,Schaumstoff,InsulTech,900,900,CAD_WG-006-22.cad
+3,WG-006-23,Kunststoffverkleidung,Verkleidung aus Kunststoff,1,Kunststoff,PlasticDesign,1100,1100,CAD_WG-006-23.cad
+3,WG-006-24,Wartungszugang,Wartungszugangspunkte,4,Aluminium,AccessSystems,700,2800,CAD_WG-006-24.cad
+3,WG-006-25,Kabelkanäle,Kabelkanäle,1,Plastic,CableSolutions,600,600,CAD_WG-006-25.cad
+3,WG-006-26,Notfallbeleuchtung,Notfallbeleuchtung,1,LED/Plastic,LightWorks,900,900,CAD_WG-006-26.cad
+3,WG-006-27,Lüftungssystem,Lüftungssystem,1,Aluminium,VentTech,1300,1300,CAD_WG-006-27.cad
+3,WG-006-28,Wartungswerkzeug,Wartungswerkzeug,1,Stahl,ToolMakers,500,500,CAD_WG-006-28.cad
+2,WG-007,Wagen 7,Passagierwagen - Wagen 7,1,Steel/Aluminium,WagonBuilders,360000,360000,CAD_WG-007.cad
+3,WG-007-01,Fahrgestell,Chassis des Wagens,1,Stahl,WagonFrames,30000,30000,CAD_WG-007-01.cad
+3,WG-007-02,Bodenplatte,Boden des Wagens,1,Aluminium,FloorTech,15000,15000,CAD_WG-007-02.cad
+3,WG-007-03,Dachstruktur,Tragende Dachkonstruktion,1,Aluminium,RoofWorks,12000,12000,CAD_WG-007-03.cad
+3,WG-007-04,Seitenwände,Seitliche Verkleidung,2,Aluminium/Glas,PanelCorp,8000,16000,CAD_WG-007-04.cad
+3,WG-007-05,Fenster,Glasfenster,8,Glas,WindowMakers,1000,8000,CAD_WG-007-05.cad
+3,WG-007-06,Türen,Ein- und Ausstiegstüren,2,Aluminium,DoorTech,2000,4000,CAD_WG-007-06.cad
+3,WG-007-07,Innenverkleidung,Innenraumverkleidung,1,Composite,InteriorDesign,5000,5000,CAD_WG-007-07.cad
+3,WG-007-08,Sitzreihen,Sitzgelegenheiten,20,Stoff/Steel,SeatingCo,300,6000,CAD_WG-007-08.cad
+3,WG-007-09,Gepäckablage,Ablagefläche für Gepäck,1,Stahl,StorageSolutions,2500,2500,CAD_WG-007-09.cad
+3,WG-007-10,Klimaanlage,Klimaanlage,1,Aluminium/Plastic,ClimateControl,4000,4000,CAD_WG-007-10.cad
+3,WG-007-11,Heizsystem,Heizsystem,1,Stahl,HeatTech,3500,3500,CAD_WG-007-11.cad
+3,WG-007-12,Elektrische Verkabelung,Verkabelungssystem,1,Kupfer/Plastic,CableCorp,2000,2000,CAD_WG-007-12.cad
+3,WG-007-13,Beleuchtungssystem,Innenbeleuchtung,1,LED/Plastic,LightWorks,1500,1500,CAD_WG-007-13.cad
+3,WG-007-14,Bordnetz,Elektronisches Netz,1,Electronic/Kupfer,NetTech,2200,2200,CAD_WG-007-14.cad
+3,WG-007-15,Sicherheitsausstattung,Sicherheitsausrüstung,1,Stahl/Plastic,SafeSystems,1800,1800,CAD_WG-007-15.cad
+3,WG-007-16,Notbremsvorrichtung,Notbremsvorrichtung,1,Stahl,BrakeSafety,2500,2500,CAD_WG-007-16.cad
+3,WG-007-17,Infotainmentsystem,Infotainmentsystem,1,Electronic/Plastic,InfoTech,3000,3000,CAD_WG-007-17.cad
+3,WG-007-18,Reinigungssystem,Reinigungseinheit,1,Composite,CleanTech,1200,1200,CAD_WG-007-18.cad
+3,WG-007-19,Bodenbelag,Bodenbelag,1,Vinyl,FloorCover,800,800,CAD_WG-007-19.cad
+3,WG-007-20,Akustikdämmung,Schallschutzdämmung,1,Schallschutzmaterial,AcoustiCorp,1600,1600,CAD_WG-007-20.cad
+3,WG-007-21,Stahlrahmen,Struktureller Stahlrahmen,1,Stahl,FrameWorks,3500,3500,CAD_WG-007-21.cad
+3,WG-007-22,Isolationsmaterial,Dämmmaterial,1,Schaumstoff,InsulTech,900,900,CAD_WG-007-22.cad
+3,WG-007-23,Kunststoffverkleidung,Verkleidung aus Kunststoff,1,Kunststoff,PlasticDesign,1100,1100,CAD_WG-007-23.cad
+3,WG-007-24,Wartungszugang,Wartungszugangspunkte,4,Aluminium,AccessSystems,700,2800,CAD_WG-007-24.cad
+3,WG-007-25,Kabelkanäle,Kabelkanäle,1,Plastic,CableSolutions,600,600,CAD_WG-007-25.cad
+3,WG-007-26,Notfallbeleuchtung,Notfallbeleuchtung,1,LED/Plastic,LightWorks,900,900,CAD_WG-007-26.cad
+3,WG-007-27,Lüftungssystem,Lüftungssystem,1,Aluminium,VentTech,1300,1300,CAD_WG-007-27.cad
+3,WG-007-28,Wartungswerkzeug,Wartungswerkzeug,1,Stahl,ToolMakers,500,500,CAD_WG-007-28.cad
+2,WG-008,Wagen 8,Passagierwagen - Wagen 8,1,Steel/Aluminium,WagonBuilders,370000,370000,CAD_WG-008.cad
+3,WG-008-01,Fahrgestell,Chassis des Wagens,1,Stahl,WagonFrames,30000,30000,CAD_WG-008-01.cad
+3,WG-008-02,Bodenplatte,Boden des Wagens,1,Aluminium,FloorTech,15000,15000,CAD_WG-008-02.cad
+3,WG-008-03,Dachstruktur,Tragende Dachkonstruktion,1,Aluminium,RoofWorks,12000,12000,CAD_WG-008-03.cad
+3,WG-008-04,Seitenwände,Seitliche Verkleidung,2,Aluminium/Glas,PanelCorp,8000,16000,CAD_WG-008-04.cad
+3,WG-008-05,Fenster,Glasfenster,8,Glas,WindowMakers,1000,8000,CAD_WG-008-05.cad
+3,WG-008-06,Türen,Ein- und Ausstiegstüren,2,Aluminium,DoorTech,2000,4000,CAD_WG-008-06.cad
+3,WG-008-07,Innenverkleidung,Innenraumverkleidung,1,Composite,InteriorDesign,5000,5000,CAD_WG-008-07.cad
+3,WG-008-08,Sitzreihen,Sitzgelegenheiten,20,Stoff/Steel,SeatingCo,300,6000,CAD_WG-008-08.cad
+3,WG-008-09,Gepäckablage,Ablagefläche für Gepäck,1,Stahl,StorageSolutions,2500,2500,CAD_WG-008-09.cad
+3,WG-008-10,Klimaanlage,Klimaanlage,1,Aluminium/Plastic,ClimateControl,4000,4000,CAD_WG-008-10.cad
+3,WG-008-11,Heizsystem,Heizsystem,1,Stahl,HeatTech,3500,3500,CAD_WG-008-11.cad
+3,WG-008-12,Elektrische Verkabelung,Verkabelungssystem,1,Kupfer/Plastic,CableCorp,2000,2000,CAD_WG-008-12.cad
+3,WG-008-13,Beleuchtungssystem,Innenbeleuchtung,1,LED/Plastic,LightWorks,1500,1500,CAD_WG-008-13.cad
+3,WG-008-14,Bordnetz,Elektronisches Netz,1,Electronic/Kupfer,NetTech,2200,2200,CAD_WG-008-14.cad
+3,WG-008-15,Sicherheitsausstattung,Sicherheitsausrüstung,1,Stahl/Plastic,SafeSystems,1800,1800,CAD_WG-008-15.cad
+3,WG-008-16,Notbremsvorrichtung,Notbremsvorrichtung,1,Stahl,BrakeSafety,2500,2500,CAD_WG-008-16.cad
+3,WG-008-17,Infotainmentsystem,Infotainmentsystem,1,Electronic/Plastic,InfoTech,3000,3000,CAD_WG-008-17.cad
+3,WG-008-18,Reinigungssystem,Reinigungseinheit,1,Composite,CleanTech,1200,1200,CAD_WG-008-18.cad
+3,WG-008-19,Bodenbelag,Bodenbelag,1,Vinyl,FloorCover,800,800,CAD_WG-008-19.cad
+3,WG-008-20,Akustikdämmung,Schallschutzdämmung,1,Schallschutzmaterial,AcoustiCorp,1600,1600,CAD_WG-008-20.cad
+3,WG-008-21,Stahlrahmen,Struktureller Stahlrahmen,1,Stahl,FrameWorks,3500,3500,CAD_WG-008-21.cad
+3,WG-008-22,Isolationsmaterial,Dämmmaterial,1,Schaumstoff,InsulTech,900,900,CAD_WG-008-22.cad
+3,WG-008-23,Kunststoffverkleidung,Verkleidung aus Kunststoff,1,Kunststoff,PlasticDesign,1100,1100,CAD_WG-008-23.cad
+3,WG-008-24,Wartungszugang,Wartungszugangspunkte,4,Aluminium,AccessSystems,700,2800,CAD_WG-008-24.cad
+3,WG-008-25,Kabelkanäle,Kabelkanäle,1,Plastic,CableSolutions,600,600,CAD_WG-008-25.cad
+3,WG-008-26,Notfallbeleuchtung,Notfallbeleuchtung,1,LED/Plastic,LightWorks,900,900,CAD_WG-008-26.cad
+3,WG-008-27,Lüftungssystem,Lüftungssystem,1,Aluminium,VentTech,1300,1300,CAD_WG-008-27.cad
+3,WG-008-28,Wartungswerkzeug,Wartungswerkzeug,1,Stahl,ToolMakers,500,500,CAD_WG-008-28.cad
+2,WG-009,Wagen 9,Passagierwagen - Wagen 9,1,Steel/Aluminium,WagonBuilders,380000,380000,CAD_WG-009.cad
+3,WG-009-01,Fahrgestell,Chassis des Wagens,1,Stahl,WagonFrames,30000,30000,CAD_WG-009-01.cad
+3,WG-009-02,Bodenplatte,Boden des Wagens,1,Aluminium,FloorTech,15000,15000,CAD_WG-009-02.cad
+3,WG-009-03,Dachstruktur,Tragende Dachkonstruktion,1,Aluminium,RoofWorks,12000,12000,CAD_WG-009-03.cad
+3,WG-009-04,Seitenwände,Seitliche Verkleidung,2,Aluminium/Glas,PanelCorp,8000,16000,CAD_WG-009-04.cad
+3,WG-009-05,Fenster,Glasfenster,8,Glas,WindowMakers,1000,8000,CAD_WG-009-05.cad
+3,WG-009-06,Türen,Ein- und Ausstiegstüren,2,Aluminium,DoorTech,2000,4000,CAD_WG-009-06.cad
+3,WG-009-07,Innenverkleidung,Innenraumverkleidung,1,Composite,InteriorDesign,5000,5000,CAD_WG-009-07.cad
+3,WG-009-08,Sitzreihen,Sitzgelegenheiten,20,Stoff/Steel,SeatingCo,300,6000,CAD_WG-009-08.cad
+3,WG-009-09,Gepäckablage,Ablagefläche für Gepäck,1,Stahl,StorageSolutions,2500,2500,CAD_WG-009-09.cad
+3,WG-009-10,Klimaanlage,Klimaanlage,1,Aluminium/Plastic,ClimateControl,4000,4000,CAD_WG-009-10.cad
+3,WG-009-11,Heizsystem,Heizsystem,1,Stahl,HeatTech,3500,3500,CAD_WG-009-11.cad
+3,WG-009-12,Elektrische Verkabelung,Verkabelungssystem,1,Kupfer/Plastic,CableCorp,2000,2000,CAD_WG-009-12.cad
+3,WG-009-13,Beleuchtungssystem,Innenbeleuchtung,1,LED/Plastic,LightWorks,1500,1500,CAD_WG-009-13.cad
+3,WG-009-14,Bordnetz,Elektronisches Netz,1,Electronic/Kupfer,NetTech,2200,2200,CAD_WG-009-14.cad
+3,WG-009-15,Sicherheitsausstattung,Sicherheitsausrüstung,1,Stahl/Plastic,SafeSystems,1800,1800,CAD_WG-009-15.cad
+3,WG-009-16,Notbremsvorrichtung,Notbremsvorrichtung,1,Stahl,BrakeSafety,2500,2500,CAD_WG-009-16.cad
+3,WG-009-17,Infotainmentsystem,Infotainmentsystem,1,Electronic/Plastic,InfoTech,3000,3000,CAD_WG-009-17.cad
+3,WG-009-18,Reinigungssystem,Reinigungseinheit,1,Composite,CleanTech,1200,1200,CAD_WG-009-18.cad
+3,WG-009-19,Bodenbelag,Bodenbelag,1,Vinyl,FloorCover,800,800,CAD_WG-009-19.cad
+3,WG-009-20,Akustikdämmung,Schallschutzdämmung,1,Schallschutzmaterial,AcoustiCorp,1600,1600,CAD_WG-009-20.cad
+3,WG-009-21,Stahlrahmen,Struktureller Stahlrahmen,1,Stahl,FrameWorks,3500,3500,CAD_WG-009-21.cad
+3,WG-009-22,Isolationsmaterial,Dämmmaterial,1,Schaumstoff,InsulTech,900,900,CAD_WG-009-22.cad
+3,WG-009-23,Kunststoffverkleidung,Verkleidung aus Kunststoff,1,Kunststoff,PlasticDesign,1100,1100,CAD_WG-009-23.cad
+3,WG-009-24,Wartungszugang,Wartungszugangspunkte,4,Aluminium,AccessSystems,700,2800,CAD_WG-009-24.cad
+3,WG-009-25,Kabelkanäle,Kabelkanäle,1,Plastic,CableSolutions,600,600,CAD_WG-009-25.cad
+3,WG-009-26,Notfallbeleuchtung,Notfallbeleuchtung,1,LED/Plastic,LightWorks,900,900,CAD_WG-009-26.cad
+3,WG-009-27,Lüftungssystem,Lüftungssystem,1,Aluminium,VentTech,1300,1300,CAD_WG-009-27.cad
+3,WG-009-28,Wartungswerkzeug,Wartungswerkzeug,1,Stahl,ToolMakers,500,500,CAD_WG-009-28.cad
+2,WG-010,Wagen 10,Passagierwagen - Wagen 10,1,Steel/Aluminium,WagonBuilders,390000,390000,CAD_WG-010.cad
+3,WG-010-01,Fahrgestell,Chassis des Wagens,1,Stahl,WagonFrames,30000,30000,CAD_WG-010-01.cad
+3,WG-010-02,Bodenplatte,Boden des Wagens,1,Aluminium,FloorTech,15000,15000,CAD_WG-010-02.cad
+3,WG-010-03,Dachstruktur,Tragende Dachkonstruktion,1,Aluminium,RoofWorks,12000,12000,CAD_WG-010-03.cad
+3,WG-010-04,Seitenwände,Seitliche Verkleidung,2,Aluminium/Glas,PanelCorp,8000,16000,CAD_WG-010-04.cad
+3,WG-010-05,Fenster,Glasfenster,8,Glas,WindowMakers,1000,8000,CAD_WG-010-05.cad
+3,WG-010-06,Türen,Ein- und Ausstiegstüren,2,Aluminium,DoorTech,2000,4000,CAD_WG-010-06.cad
+3,WG-010-07,Innenverkleidung,Innenraumverkleidung,1,Composite,InteriorDesign,5000,5000,CAD_WG-010-07.cad
+3,WG-010-08,Sitzreihen,Sitzgelegenheiten,20,Stoff/Steel,SeatingCo,300,6000,CAD_WG-010-08.cad
+3,WG-010-09,Gepäckablage,Ablagefläche für Gepäck,1,Stahl,StorageSolutions,2500,2500,CAD_WG-010-09.cad
+3,WG-010-10,Klimaanlage,Klimaanlage,1,Aluminium/Plastic,ClimateControl,4000,4000,CAD_WG-010-10.cad
+3,WG-010-11,Heizsystem,Heizsystem,1,Stahl,HeatTech,3500,3500,CAD_WG-010-11.cad
+3,WG-010-12,Elektrische Verkabelung,Verkabelungssystem,1,Kupfer/Plastic,CableCorp,2000,2000,CAD_WG-010-12.cad
+3,WG-010-13,Beleuchtungssystem,Innenbeleuchtung,1,LED/Plastic,LightWorks,1500,1500,CAD_WG-010-13.cad
+3,WG-010-14,Bordnetz,Elektronisches Netz,1,Electronic/Kupfer,NetTech,2200,2200,CAD_WG-010-14.cad
+3,WG-010-15,Sicherheitsausstattung,Sicherheitsausrüstung,1,Stahl/Plastic,SafeSystems,1800,1800,CAD_WG-010-15.cad
+3,WG-010-16,Notbremsvorrichtung,Notbremsvorrichtung,1,Stahl,BrakeSafety,2500,2500,CAD_WG-010-16.cad
+3,WG-010-17,Infotainmentsystem,Infotainmentsystem,1,Electronic/Plastic,InfoTech,3000,3000,CAD_WG-010-17.cad
+3,WG-010-18,Reinigungssystem,Reinigungseinheit,1,Composite,CleanTech,1200,1200,CAD_WG-010-18.cad
+3,WG-010-19,Bodenbelag,Bodenbelag,1,Vinyl,FloorCover,800,800,CAD_WG-010-19.cad
+3,WG-010-20,Akustikdämmung,Schallschutzdämmung,1,Schallschutzmaterial,AcoustiCorp,1600,1600,CAD_WG-010-20.cad
+3,WG-010-21,Stahlrahmen,Struktureller Stahlrahmen,1,Stahl,FrameWorks,3500,3500,CAD_WG-010-21.cad
+3,WG-010-22,Isolationsmaterial,Dämmmaterial,1,Schaumstoff,InsulTech,900,900,CAD_WG-010-22.cad
+3,WG-010-23,Kunststoffverkleidung,Verkleidung aus Kunststoff,1,Kunststoff,PlasticDesign,1100,1100,CAD_WG-010-23.cad
+3,WG-010-24,Wartungszugang,Wartungszugangspunkte,4,Aluminium,AccessSystems,700,2800,CAD_WG-010-24.cad
+3,WG-010-25,Kabelkanäle,Kabelkanäle,1,Plastic,CableSolutions,600,600,CAD_WG-010-25.cad
+3,WG-010-26,Notfallbeleuchtung,Notfallbeleuchtung,1,LED/Plastic,LightWorks,900,900,CAD_WG-010-26.cad
+3,WG-010-27,Lüftungssystem,Lüftungssystem,1,Aluminium,VentTech,1300,1300,CAD_WG-010-27.cad
+3,WG-010-28,Wartungswerkzeug,Wartungswerkzeug,1,Stahl,ToolMakers,500,500,CAD_WG-010-28.cad
+2,WG-011,Wagen 11,Passagierwagen - Wagen 11,1,Steel/Aluminium,WagonBuilders,400000,400000,CAD_WG-011.cad
+3,WG-011-01,Fahrgestell,Chassis des Wagens,1,Stahl,WagonFrames,30000,30000,CAD_WG-011-01.cad
+3,WG-011-02,Bodenplatte,Boden des Wagens,1,Aluminium,FloorTech,15000,15000,CAD_WG-011-02.cad
+3,WG-011-03,Dachstruktur,Tragende Dachkonstruktion,1,Aluminium,RoofWorks,12000,12000,CAD_WG-011-03.cad
+3,WG-011-04,Seitenwände,Seitliche Verkleidung,2,Aluminium/Glas,PanelCorp,8000,16000,CAD_WG-011-04.cad
+3,WG-011-05,Fenster,Glasfenster,8,Glas,WindowMakers,1000,8000,CAD_WG-011-05.cad
+3,WG-011-06,Türen,Ein- und Ausstiegstüren,2,Aluminium,DoorTech,2000,4000,CAD_WG-011-06.cad
+3,WG-011-07,Innenverkleidung,Innenraumverkleidung,1,Composite,InteriorDesign,5000,5000,CAD_WG-011-07.cad
+3,WG-011-08,Sitzreihen,Sitzgelegenheiten,20,Stoff/Steel,SeatingCo,300,6000,CAD_WG-011-08.cad
+3,WG-011-09,Gepäckablage,Ablagefläche für Gepäck,1,Stahl,StorageSolutions,2500,2500,CAD_WG-011-09.cad
+3,WG-011-10,Klimaanlage,Klimaanlage,1,Aluminium/Plastic,ClimateControl,4000,4000,CAD_WG-011-10.cad
+3,WG-011-11,Heizsystem,Heizsystem,1,Stahl,HeatTech,3500,3500,CAD_WG-011-11.cad
+3,WG-011-12,Elektrische Verkabelung,Verkabelungssystem,1,Kupfer/Plastic,CableCorp,2000,2000,CAD_WG-011-12.cad
+3,WG-011-13,Beleuchtungssystem,Innenbeleuchtung,1,LED/Plastic,LightWorks,1500,1500,CAD_WG-011-13.cad
+3,WG-011-14,Bordnetz,Elektronisches Netz,1,Electronic/Kupfer,NetTech,2200,2200,CAD_WG-011-14.cad
+3,WG-011-15,Sicherheitsausstattung,Sicherheitsausrüstung,1,Stahl/Plastic,SafeSystems,1800,1800,CAD_WG-011-15.cad
+3,WG-011-16,Notbremsvorrichtung,Notbremsvorrichtung,1,Stahl,BrakeSafety,2500,2500,CAD_WG-011-16.cad
+3,WG-011-17,Infotainmentsystem,Infotainmentsystem,1,Electronic/Plastic,InfoTech,3000,3000,CAD_WG-011-17.cad
+3,WG-011-18,Reinigungssystem,Reinigungseinheit,1,Composite,CleanTech,1200,1200,CAD_WG-011-18.cad
+3,WG-011-19,Bodenbelag,Bodenbelag,1,Vinyl,FloorCover,800,800,CAD_WG-011-19.cad
+3,WG-011-20,Akustikdämmung,Schallschutzdämmung,1,Schallschutzmaterial,AcoustiCorp,1600,1600,CAD_WG-011-20.cad
+3,WG-011-21,Stahlrahmen,Struktureller Stahlrahmen,1,Stahl,FrameWorks,3500,3500,CAD_WG-011-21.cad
+3,WG-011-22,Isolationsmaterial,Dämmmaterial,1,Schaumstoff,InsulTech,900,900,CAD_WG-011-22.cad
+3,WG-011-23,Kunststoffverkleidung,Verkleidung aus Kunststoff,1,Kunststoff,PlasticDesign,1100,1100,CAD_WG-011-23.cad
+3,WG-011-24,Wartungszugang,Wartungszugangspunkte,4,Aluminium,AccessSystems,700,2800,CAD_WG-011-24.cad
+3,WG-011-25,Kabelkanäle,Kabelkanäle,1,Plastic,CableSolutions,600,600,CAD_WG-011-25.cad
+3,WG-011-26,Notfallbeleuchtung,Notfallbeleuchtung,1,LED/Plastic,LightWorks,900,900,CAD_WG-011-26.cad
+3,WG-011-27,Lüftungssystem,Lüftungssystem,1,Aluminium,VentTech,1300,1300,CAD_WG-011-27.cad
+3,WG-011-28,Wartungswerkzeug,Wartungswerkzeug,1,Stahl,ToolMakers,500,500,CAD_WG-011-28.cad
+2,WG-012,Wagen 12,Passagierwagen - Wagen 12,1,Steel/Aluminium,WagonBuilders,410000,410000,CAD_WG-012.cad
+3,WG-012-01,Fahrgestell,Chassis des Wagens,1,Stahl,WagonFrames,30000,30000,CAD_WG-012-01.cad
+3,WG-012-02,Bodenplatte,Boden des Wagens,1,Aluminium,FloorTech,15000,15000,CAD_WG-012-02.cad
+3,WG-012-03,Dachstruktur,Tragende Dachkonstruktion,1,Aluminium,RoofWorks,12000,12000,CAD_WG-012-03.cad
+3,WG-012-04,Seitenwände,Seitliche Verkleidung,2,Aluminium/Glas,PanelCorp,8000,16000,CAD_WG-012-04.cad
+3,WG-012-05,Fenster,Glasfenster,8,Glas,WindowMakers,1000,8000,CAD_WG-012-05.cad
+3,WG-012-06,Türen,Ein- und Ausstiegstüren,2,Aluminium,DoorTech,2000,4000,CAD_WG-012-06.cad
+3,WG-012-07,Innenverkleidung,Innenraumverkleidung,1,Composite,InteriorDesign,5000,5000,CAD_WG-012-07.cad
+3,WG-012-08,Sitzreihen,Sitzgelegenheiten,20,Stoff/Steel,SeatingCo,300,6000,CAD_WG-012-08.cad
+3,WG-012-09,Gepäckablage,Ablagefläche für Gepäck,1,Stahl,StorageSolutions,2500,2500,CAD_WG-012-09.cad
+3,WG-012-10,Klimaanlage,Klimaanlage,1,Aluminium/Plastic,ClimateControl,4000,4000,CAD_WG-012-10.cad
+3,WG-012-11,Heizsystem,Heizsystem,1,Stahl,HeatTech,3500,3500,CAD_WG-012-11.cad
+3,WG-012-12,Elektrische Verkabelung,Verkabelungssystem,1,Kupfer/Plastic,CableCorp,2000,2000,CAD_WG-012-12.cad
+3,WG-012-13,Beleuchtungssystem,Innenbeleuchtung,1,LED/Plastic,LightWorks,1500,1500,CAD_WG-012-13.cad
+3,WG-012-14,Bordnetz,Elektronisches Netz,1,Electronic/Kupfer,NetTech,2200,2200,CAD_WG-012-14.cad
+3,WG-012-15,Sicherheitsausstattung,Sicherheitsausrüstung,1,Stahl/Plastic,SafeSystems,1800,1800,CAD_WG-012-15.cad
+3,WG-012-16,Notbremsvorrichtung,Notbremsvorrichtung,1,Stahl,BrakeSafety,2500,2500,CAD_WG-012-16.cad
+3,WG-012-17,Infotainmentsystem,Infotainmentsystem,1,Electronic/Plastic,InfoTech,3000,3000,CAD_WG-012-17.cad
+3,WG-012-18,Reinigungssystem,Reinigungseinheit,1,Composite,CleanTech,1200,1200,CAD_WG-012-18.cad
+3,WG-012-19,Bodenbelag,Bodenbelag,1,Vinyl,FloorCover,800,800,CAD_WG-012-19.cad
+3,WG-012-20,Akustikdämmung,Schallschutzdämmung,1,Schallschutzmaterial,AcoustiCorp,1600,1600,CAD_WG-012-20.cad
+3,WG-012-21,Stahlrahmen,Struktureller Stahlrahmen,1,Stahl,FrameWorks,3500,3500,CAD_WG-012-21.cad
+3,WG-012-22,Isolationsmaterial,Dämmmaterial,1,Schaumstoff,InsulTech,900,900,CAD_WG-012-22.cad
+3,WG-012-23,Kunststoffverkleidung,Verkleidung aus Kunststoff,1,Kunststoff,PlasticDesign,1100,1100,CAD_WG-012-23.cad
+3,WG-012-24,Wartungszugang,Wartungszugangspunkte,4,Aluminium,AccessSystems,700,2800,CAD_WG-012-24.cad
+3,WG-012-25,Kabelkanäle,Kabelkanäle,1,Plastic,CableSolutions,600,600,CAD_WG-012-25.cad
+3,WG-012-26,Notfallbeleuchtung,Notfallbeleuchtung,1,LED/Plastic,LightWorks,900,900,CAD_WG-012-26.cad
+3,WG-012-27,Lüftungssystem,Lüftungssystem,1,Aluminium,VentTech,1300,1300,CAD_WG-012-27.cad
+3,WG-012-28,Wartungswerkzeug,Wartungswerkzeug,1,Stahl,ToolMakers,500,500,CAD_WG-012-28.cad
+2,WG-013,Wagen 13,Passagierwagen - Wagen 13,1,Steel/Aluminium,WagonBuilders,420000,420000,CAD_WG-013.cad
+3,WG-013-01,Fahrgestell,Chassis des Wagens,1,Stahl,WagonFrames,30000,30000,CAD_WG-013-01.cad
+3,WG-013-02,Bodenplatte,Boden des Wagens,1,Aluminium,FloorTech,15000,15000,CAD_WG-013-02.cad
+3,WG-013-03,Dachstruktur,Tragende Dachkonstruktion,1,Aluminium,RoofWorks,12000,12000,CAD_WG-013-03.cad
+3,WG-013-04,Seitenwände,Seitliche Verkleidung,2,Aluminium/Glas,PanelCorp,8000,16000,CAD_WG-013-04.cad
+3,WG-013-05,Fenster,Glasfenster,8,Glas,WindowMakers,1000,8000,CAD_WG-013-05.cad
+3,WG-013-06,Türen,Ein- und Ausstiegstüren,2,Aluminium,DoorTech,2000,4000,CAD_WG-013-06.cad
+3,WG-013-07,Innenverkleidung,Innenraumverkleidung,1,Composite,InteriorDesign,5000,5000,CAD_WG-013-07.cad
+3,WG-013-08,Sitzreihen,Sitzgelegenheiten,20,Stoff/Steel,SeatingCo,300,6000,CAD_WG-013-08.cad
+3,WG-013-09,Gepäckablage,Ablagefläche für Gepäck,1,Stahl,StorageSolutions,2500,2500,CAD_WG-013-09.cad
+3,WG-013-10,Klimaanlage,Klimaanlage,1,Aluminium/Plastic,ClimateControl,4000,4000,CAD_WG-013-10.cad
+3,WG-013-11,Heizsystem,Heizsystem,1,Stahl,HeatTech,3500,3500,CAD_WG-013-11.cad
+3,WG-013-12,Elektrische Verkabelung,Verkabelungssystem,1,Kupfer/Plastic,CableCorp,2000,2000,CAD_WG-013-12.cad
+3,WG-013-13,Beleuchtungssystem,Innenbeleuchtung,1,LED/Plastic,LightWorks,1500,1500,CAD_WG-013-13.cad
+3,WG-013-14,Bordnetz,Elektronisches Netz,1,Electronic/Kupfer,NetTech,2200,2200,CAD_WG-013-14.cad
+3,WG-013-15,Sicherheitsausstattung,Sicherheitsausrüstung,1,Stahl/Plastic,SafeSystems,1800,1800,CAD_WG-013-15.cad
+3,WG-013-16,Notbremsvorrichtung,Notbremsvorrichtung,1,Stahl,BrakeSafety,2500,2500,CAD_WG-013-16.cad
+3,WG-013-17,Infotainmentsystem,Infotainmentsystem,1,Electronic/Plastic,InfoTech,3000,3000,CAD_WG-013-17.cad
+3,WG-013-18,Reinigungssystem,Reinigungseinheit,1,Composite,CleanTech,1200,1200,CAD_WG-013-18.cad
+3,WG-013-19,Bodenbelag,Bodenbelag,1,Vinyl,FloorCover,800,800,CAD_WG-013-19.cad
+3,WG-013-20,Akustikdämmung,Schallschutzdämmung,1,Schallschutzmaterial,AcoustiCorp,1600,1600,CAD_WG-013-20.cad
+3,WG-013-21,Stahlrahmen,Struktureller Stahlrahmen,1,Stahl,FrameWorks,3500,3500,CAD_WG-013-21.cad
+3,WG-013-22,Isolationsmaterial,Dämmmaterial,1,Schaumstoff,InsulTech,900,900,CAD_WG-013-22.cad
+3,WG-013-23,Kunststoffverkleidung,Verkleidung aus Kunststoff,1,Kunststoff,PlasticDesign,1100,1100,CAD_WG-013-23.cad
+3,WG-013-24,Wartungszugang,Wartungszugangspunkte,4,Aluminium,AccessSystems,700,2800,CAD_WG-013-24.cad
+3,WG-013-25,Kabelkanäle,Kabelkanäle,1,Plastic,CableSolutions,600,600,CAD_WG-013-25.cad
+3,WG-013-26,Notfallbeleuchtung,Notfallbeleuchtung,1,LED/Plastic,LightWorks,900,900,CAD_WG-013-26.cad
+3,WG-013-27,Lüftungssystem,Lüftungssystem,1,Aluminium,VentTech,1300,1300,CAD_WG-013-27.cad
+3,WG-013-28,Wartungswerkzeug,Wartungswerkzeug,1,Stahl,ToolMakers,500,500,CAD_WG-013-28.cad
+2,WG-014,Wagen 14,Passagierwagen - Wagen 14,1,Steel/Aluminium,WagonBuilders,430000,430000,CAD_WG-014.cad
+3,WG-014-01,Fahrgestell,Chassis des Wagens,1,Stahl,WagonFrames,30000,30000,CAD_WG-014-01.cad
+3,WG-014-02,Bodenplatte,Boden des Wagens,1,Aluminium,FloorTech,15000,15000,CAD_WG-014-02.cad
+3,WG-014-03,Dachstruktur,Tragende Dachkonstruktion,1,Aluminium,RoofWorks,12000,12000,CAD_WG-014-03.cad
+3,WG-014-04,Seitenwände,Seitliche Verkleidung,2,Aluminium/Glas,PanelCorp,8000,16000,CAD_WG-014-04.cad
+3,WG-014-05,Fenster,Glasfenster,8,Glas,WindowMakers,1000,8000,CAD_WG-014-05.cad
+3,WG-014-06,Türen,Ein- und Ausstiegstüren,2,Aluminium,DoorTech,2000,4000,CAD_WG-014-06.cad
+3,WG-014-07,Innenverkleidung,Innenraumverkleidung,1,Composite,InteriorDesign,5000,5000,CAD_WG-014-07.cad
+3,WG-014-08,Sitzreihen,Sitzgelegenheiten,20,Stoff/Steel,SeatingCo,300,6000,CAD_WG-014-08.cad
+3,WG-014-09,Gepäckablage,Ablagefläche für Gepäck,1,Stahl,StorageSolutions,2500,2500,CAD_WG-014-09.cad
+3,WG-014-10,Klimaanlage,Klimaanlage,1,Aluminium/Plastic,ClimateControl,4000,4000,CAD_WG-014-10.cad
+3,WG-014-11,Heizsystem,Heizsystem,1,Stahl,HeatTech,3500,3500,CAD_WG-014-11.cad
+3,WG-014-12,Elektrische Verkabelung,Verkabelungssystem,1,Kupfer/Plastic,CableCorp,2000,2000,CAD_WG-014-12.cad
+3,WG-014-13,Beleuchtungssystem,Innenbeleuchtung,1,LED/Plastic,LightWorks,1500,1500,CAD_WG-014-13.cad
+3,WG-014-14,Bordnetz,Elektronisches Netz,1,Electronic/Kupfer,NetTech,2200,2200,CAD_WG-014-14.cad
+3,WG-014-15,Sicherheitsausstattung,Sicherheitsausrüstung,1,Stahl/Plastic,SafeSystems,1800,1800,CAD_WG-014-15.cad
+3,WG-014-16,Notbremsvorrichtung,Notbremsvorrichtung,1,Stahl,BrakeSafety,2500,2500,CAD_WG-014-16.cad
+3,WG-014-17,Infotainmentsystem,Infotainmentsystem,1,Electronic/Plastic,InfoTech,3000,3000,CAD_WG-014-17.cad
+3,WG-014-18,Reinigungssystem,Reinigungseinheit,1,Composite,CleanTech,1200,1200,CAD_WG-014-18.cad
+3,WG-014-19,Bodenbelag,Bodenbelag,1,Vinyl,FloorCover,800,800,CAD_WG-014-19.cad
+3,WG-014-20,Akustikdämmung,Schallschutzdämmung,1,Schallschutzmaterial,AcoustiCorp,1600,1600,CAD_WG-014-20.cad
+3,WG-014-21,Stahlrahmen,Struktureller Stahlrahmen,1,Stahl,FrameWorks,3500,3500,CAD_WG-014-21.cad
+3,WG-014-22,Isolationsmaterial,Dämmmaterial,1,Schaumstoff,InsulTech,900,900,CAD_WG-014-22.cad
+3,WG-014-23,Kunststoffverkleidung,Verkleidung aus Kunststoff,1,Kunststoff,PlasticDesign,1100,1100,CAD_WG-014-23.cad
+3,WG-014-24,Wartungszugang,Wartungszugangspunkte,4,Aluminium,AccessSystems,700,2800,CAD_WG-014-24.cad
+3,WG-014-25,Kabelkanäle,Kabelkanäle,1,Plastic,CableSolutions,600,600,CAD_WG-014-25.cad
+3,WG-014-26,Notfallbeleuchtung,Notfallbeleuchtung,1,LED/Plastic,LightWorks,900,900,CAD_WG-014-26.cad
+3,WG-014-27,Lüftungssystem,Lüftungssystem,1,Aluminium,VentTech,1300,1300,CAD_WG-014-27.cad
+3,WG-014-28,Wartungswerkzeug,Wartungswerkzeug,1,Stahl,ToolMakers,500,500,CAD_WG-014-28.cad
+2,WG-015,Wagen 15,Güterwagen - Wagen 15,1,Steel/Aluminium,WagonBuilders,440000,440000,CAD_WG-015.cad
+3,WG-015-01,Fahrgestell,Chassis des Wagens,1,Stahl,WagonFrames,30000,30000,CAD_WG-015-01.cad
+3,WG-015-02,Bodenplatte,Boden des Wagens,1,Aluminium,FloorTech,15000,15000,CAD_WG-015-02.cad
+3,WG-015-03,Dachstruktur,Tragende Dachkonstruktion,1,Aluminium,RoofWorks,12000,12000,CAD_WG-015-03.cad
+3,WG-015-04,Seitenwände,Seitliche Verkleidung,2,Aluminium/Glas,PanelCorp,8000,16000,CAD_WG-015-04.cad
+3,WG-015-05,Fenster,Glasfenster,8,Glas,WindowMakers,1000,8000,CAD_WG-015-05.cad
+3,WG-015-06,Türen,Ein- und Ausstiegstüren,2,Aluminium,DoorTech,2000,4000,CAD_WG-015-06.cad
+3,WG-015-07,Innenverkleidung,Innenraumverkleidung,1,Composite,InteriorDesign,5000,5000,CAD_WG-015-07.cad
+3,WG-015-08,Sitzreihen,Sitzgelegenheiten,20,Stoff/Steel,SeatingCo,300,6000,CAD_WG-015-08.cad
+3,WG-015-09,Gepäckablage,Ablagefläche für Gepäck,1,Stahl,StorageSolutions,2500,2500,CAD_WG-015-09.cad
+3,WG-015-10,Klimaanlage,Klimaanlage,1,Aluminium/Plastic,ClimateControl,4000,4000,CAD_WG-015-10.cad
+3,WG-015-11,Heizsystem,Heizsystem,1,Stahl,HeatTech,3500,3500,CAD_WG-015-11.cad
+3,WG-015-12,Elektrische Verkabelung,Verkabelungssystem,1,Kupfer/Plastic,CableCorp,2000,2000,CAD_WG-015-12.cad
+3,WG-015-13,Beleuchtungssystem,Innenbeleuchtung,1,LED/Plastic,LightWorks,1500,1500,CAD_WG-015-13.cad
+3,WG-015-14,Bordnetz,Elektronisches Netz,1,Electronic/Kupfer,NetTech,2200,2200,CAD_WG-015-14.cad
+3,WG-015-15,Sicherheitsausstattung,Sicherheitsausrüstung,1,Stahl/Plastic,SafeSystems,1800,1800,CAD_WG-015-15.cad
+3,WG-015-16,Notbremsvorrichtung,Notbremsvorrichtung,1,Stahl,BrakeSafety,2500,2500,CAD_WG-015-16.cad
+3,WG-015-17,Infotainmentsystem,Infotainmentsystem,1,Electronic/Plastic,InfoTech,3000,3000,CAD_WG-015-17.cad
+3,WG-015-18,Reinigungssystem,Reinigungseinheit,1,Composite,CleanTech,1200,1200,CAD_WG-015-18.cad
+3,WG-015-19,Bodenbelag,Bodenbelag,1,Vinyl,FloorCover,800,800,CAD_WG-015-19.cad
+3,WG-015-20,Akustikdämmung,Schallschutzdämmung,1,Schallschutzmaterial,AcoustiCorp,1600,1600,CAD_WG-015-20.cad
+3,WG-015-21,Stahlrahmen,Struktureller Stahlrahmen,1,Stahl,FrameWorks,3500,3500,CAD_WG-015-21.cad
+3,WG-015-22,Isolationsmaterial,Dämmmaterial,1,Schaumstoff,InsulTech,900,900,CAD_WG-015-22.cad
+3,WG-015-23,Kunststoffverkleidung,Verkleidung aus Kunststoff,1,Kunststoff,PlasticDesign,1100,1100,CAD_WG-015-23.cad
+3,WG-015-24,Wartungszugang,Wartungszugangspunkte,4,Aluminium,AccessSystems,700,2800,CAD_WG-015-24.cad
+3,WG-015-25,Kabelkanäle,Kabelkanäle,1,Plastic,CableSolutions,600,600,CAD_WG-015-25.cad
+3,WG-015-26,Notfallbeleuchtung,Notfallbeleuchtung,1,LED/Plastic,LightWorks,900,900,CAD_WG-015-26.cad
+3,WG-015-27,Lüftungssystem,Lüftungssystem,1,Aluminium,VentTech,1300,1300,CAD_WG-015-27.cad
+3,WG-015-28,Wartungswerkzeug,Wartungswerkzeug,1,Stahl,ToolMakers,500,500,CAD_WG-015-28.cad
+2,WG-016,Wagen 16,Güterwagen - Wagen 16,1,Steel/Aluminium,WagonBuilders,450000,450000,CAD_WG-016.cad
+3,WG-016-01,Fahrgestell,Chassis des Wagens,1,Stahl,WagonFrames,30000,30000,CAD_WG-016-01.cad
+3,WG-016-02,Bodenplatte,Boden des Wagens,1,Aluminium,FloorTech,15000,15000,CAD_WG-016-02.cad
+3,WG-016-03,Dachstruktur,Tragende Dachkonstruktion,1,Aluminium,RoofWorks,12000,12000,CAD_WG-016-03.cad
+3,WG-016-04,Seitenwände,Seitliche Verkleidung,2,Aluminium/Glas,PanelCorp,8000,16000,CAD_WG-016-04.cad
+3,WG-016-05,Fenster,Glasfenster,8,Glas,WindowMakers,1000,8000,CAD_WG-016-05.cad
+3,WG-016-06,Türen,Ein- und Ausstiegstüren,2,Aluminium,DoorTech,2000,4000,CAD_WG-016-06.cad
+3,WG-016-07,Innenverkleidung,Innenraumverkleidung,1,Composite,InteriorDesign,5000,5000,CAD_WG-016-07.cad
+3,WG-016-08,Sitzreihen,Sitzgelegenheiten,20,Stoff/Steel,SeatingCo,300,6000,CAD_WG-016-08.cad
+3,WG-016-09,Gepäckablage,Ablagefläche für Gepäck,1,Stahl,StorageSolutions,2500,2500,CAD_WG-016-09.cad
+3,WG-016-10,Klimaanlage,Klimaanlage,1,Aluminium/Plastic,ClimateControl,4000,4000,CAD_WG-016-10.cad
+3,WG-016-11,Heizsystem,Heizsystem,1,Stahl,HeatTech,3500,3500,CAD_WG-016-11.cad
+3,WG-016-12,Elektrische Verkabelung,Verkabelungssystem,1,Kupfer/Plastic,CableCorp,2000,2000,CAD_WG-016-12.cad
+3,WG-016-13,Beleuchtungssystem,Innenbeleuchtung,1,LED/Plastic,LightWorks,1500,1500,CAD_WG-016-13.cad
+3,WG-016-14,Bordnetz,Elektronisches Netz,1,Electronic/Kupfer,NetTech,2200,2200,CAD_WG-016-14.cad
+3,WG-016-15,Sicherheitsausstattung,Sicherheitsausrüstung,1,Stahl/Plastic,SafeSystems,1800,1800,CAD_WG-016-15.cad
+3,WG-016-16,Notbremsvorrichtung,Notbremsvorrichtung,1,Stahl,BrakeSafety,2500,2500,CAD_WG-016-16.cad
+3,WG-016-17,Infotainmentsystem,Infotainmentsystem,1,Electronic/Plastic,InfoTech,3000,3000,CAD_WG-016-17.cad
+3,WG-016-18,Reinigungssystem,Reinigungseinheit,1,Composite,CleanTech,1200,1200,CAD_WG-016-18.cad
+3,WG-016-19,Bodenbelag,Bodenbelag,1,Vinyl,FloorCover,800,800,CAD_WG-016-19.cad
+3,WG-016-20,Akustikdämmung,Schallschutzdämmung,1,Schallschutzmaterial,AcoustiCorp,1600,1600,CAD_WG-016-20.cad
+3,WG-016-21,Stahlrahmen,Struktureller Stahlrahmen,1,Stahl,FrameWorks,3500,3500,CAD_WG-016-21.cad
+3,WG-016-22,Isolationsmaterial,Dämmmaterial,1,Schaumstoff,InsulTech,900,900,CAD_WG-016-22.cad
+3,WG-016-23,Kunststoffverkleidung,Verkleidung aus Kunststoff,1,Kunststoff,PlasticDesign,1100,1100,CAD_WG-016-23.cad
+3,WG-016-24,Wartungszugang,Wartungszugangspunkte,4,Aluminium,AccessSystems,700,2800,CAD_WG-016-24.cad
+3,WG-016-25,Kabelkanäle,Kabelkanäle,1,Plastic,CableSolutions,600,600,CAD_WG-016-25.cad
+3,WG-016-26,Notfallbeleuchtung,Notfallbeleuchtung,1,LED/Plastic,LightWorks,900,900,CAD_WG-016-26.cad
+3,WG-016-27,Lüftungssystem,Lüftungssystem,1,Aluminium,VentTech,1300,1300,CAD_WG-016-27.cad
+3,WG-016-28,Wartungswerkzeug,Wartungswerkzeug,1,Stahl,ToolMakers,500,500,CAD_WG-016-28.cad
+
