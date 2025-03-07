@@ -25,6 +25,38 @@ Before starting, ensure that you have the following tools installed and configur
 
 The example service is designed to create a hierarchical tree representation of a train based on input CSV data. It processes files that list various train components, organizes them according to their levels, and transforms the raw data into a format suitable for import into the Explore platform via the client.
 
+### Architecture Overview
+
+![Architecture Diagram](import-service-architecture.svg "Architecture Diagram")
+
+The architecture of the importer service is designed to seamlessly integrate data from a source system into the Explore platform. 
+The following diagram illustrates the high-level flow and key components of the system:
+
+1. **Data Ingestion from Source System**  
+   The service receives data from an external source system. This data includes:
+   - A CSV file containing structured BOM data.
+   - Accompanying 3D CAD files.
+
+2. **Data Processing and Transformation**  
+   The service processes the incoming data by:
+   - Extracting and parsing the CSV file.
+   - Transforming the CSV data into a hierarchical tree structure, adhering to an AP-242-like format.
+   - Preparing the 3D CAD files for storage.
+
+3. **Data Distribution via Kafka**  
+   Once the hierarchical tree is constructed, the service publishes the tree data to a Kafka topic. This asynchronous communication channel allows the PLM system to consume and process the data efficiently.
+
+4. **Storing 3D CAD Files in Object Storage**  
+   The accompanying 3D CAD files are uploaded to an object storage solution (MinIO), ensuring scalable and reliable storage for large binary assets.
+
+#### Key Components
+
+- **Importer Service**: Orchestrates the entire data ingestion, transformation, and distribution process.
+- **Source System**: The origin of the data to be imported.
+- **Kafka Topic**: Serves as the messaging backbone for transmitting the hierarchical tree data to the PLM system.
+- **PLM System**: Consumes the structured data from Kafka to integrate into the product lifecycle management process.
+- **Object Storage (MinIO)**: Handles the storage of 3D CAD files, offering efficient access and scalability.
+
 ### Sample Data Format
 
 The CSV files typically follow this structure:
@@ -68,6 +100,25 @@ By converting the CSV data into an AP-242-like format, we facilitate seamless in
 
 ## Data Processing Workflow
 
+### Using the importer.client Library
+
+For the import of data into the Explore platform, the `importer.client` library is used. 
+This library simplifies the process by providing APIs to transform, validate, and transmit the hierarchical data tree to the PLM system.
+
+#### Maven Dependency
+
+To include the library in your project, add the following dependency to your `pom.xml`:
+
+```xml
+<dependency>
+    <groupId>de.explore</groupId>
+    <artifactId>import.client</artifactId>
+    <version>${import.client.version}</version>
+</dependency>
+```
+
+### Import Steps
+
 The example service processes incoming data through the following steps:
 
 1. **Project Verification and Creation**  
@@ -93,3 +144,6 @@ The example service processes incoming data through the following steps:
    This step ensures that all digital assets are properly stored and linked to the corresponding components in the PLM system.
 
 ## Further Documentation
+
+The client library is available on the Explore GitLab repository, where you can find detailed documentation. 
+For any additional information or specific inquiries regarding its usage and integration, please reach out to the Explore development team.
