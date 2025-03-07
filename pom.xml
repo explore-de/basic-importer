@@ -9,15 +9,18 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <properties>
-        <compiler-plugin.version>3.12.1</compiler-plugin.version>
+        <compiler-plugin.version>3.14.0</compiler-plugin.version>
         <maven.compiler.release>21</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
         <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
-        <quarkus.platform.version>3.13.1</quarkus.platform.version>
+        <quarkus.platform.version>3.18.4</quarkus.platform.version>
         <skipITs>true</skipITs>
-        <surefire-plugin.version>3.2.5</surefire-plugin.version>
+        <surefire-plugin.version>3.5.2</surefire-plugin.version>
+        <hamcrest.version>3.0</hamcrest.version>
+        <apache.csv.version>1.13.0</apache.csv.version>
+        <import.client.version>1.1.0-SNAPSHOT</import.client.version>
     </properties>
 
     <dependencyManagement>
@@ -74,15 +77,20 @@
             <artifactId>quarkus-oidc</artifactId>
         </dependency>
         <dependency>
-            <groupId>de.exentra.explore</groupId>
-            <artifactId>plm.avro</artifactId>
-            <version>1.0.12</version>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-hibernate-validator</artifactId>
         </dependency>
         <dependency>
-            <groupId>de.explore.api</groupId>
-            <artifactId>import-utils</artifactId>
-            <version>1.2</version>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-csv</artifactId>
+            <version>${apache.csv.version}</version>
         </dependency>
+        <dependency>
+            <groupId>de.explore</groupId>
+            <artifactId>import.client</artifactId>
+            <version>${import.client.version}</version>
+        </dependency>
+        <!-- Test -->
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-junit5</artifactId>
@@ -94,8 +102,10 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest</artifactId>
+            <version>${hamcrest.version}</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
     <build>
@@ -154,6 +164,29 @@
                         <!--suppress UnresolvedMavenProperty -->
                         <maven.home>${maven.home}</maven.home>
                     </systemPropertyVariables>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>net.revelc.code.formatter</groupId>
+                <artifactId>formatter-maven-plugin</artifactId>
+                <version>2.23.0</version>
+                <executions>
+                    <execution>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>validate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>de.exentra.maven</groupId>
+                        <artifactId>codeformatter</artifactId>
+                        <version>1.2</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <configFile>eclipse/format.xml</configFile>
                 </configuration>
             </plugin>
         </plugins>

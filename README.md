@@ -2,7 +2,7 @@
 
 This project showcases how to import a basic BOM structure into the explore 
 platform. It sends the pre-built BOM tree structure to a Kafka topic, where 
-it will be consumed and imported by the explore plattform. Additional 
+it will be consumed and imported by the explore plattform. For further details, please check out the [HowTo](HOWTO.md) Additional 
 information can be found in your local and individual explore documentation 
 plattform. 
 
