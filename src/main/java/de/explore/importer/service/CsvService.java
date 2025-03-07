@@ -57,18 +57,16 @@ public class CsvService
 
 				if (stack.isEmpty())
 				{
-					// Kein übergeordneter Knoten gefunden → dieser Knoten ist
-					// eine Root
+					// No parent node found → this node is a root
 					roots.add(node);
 				}
 				else
 				{
-					// Füge den Knoten als Kind des aktuell obersten Knotens
-					// hinzu
+					// Add the node as a child of the current top node
 					stack.getFirst().addChild(node);
 				}
 
-				// Schiebe den aktuellen Knoten in den Stack
+				// Push the current node onto the stack
 				stack.addFirst(node);
 			});
 

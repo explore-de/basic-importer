@@ -105,7 +105,7 @@ public class ImportService
 		treeWrapperBuilder.addReference(unconfigured.buildProjectReference(projectSyncObjectBuilder.getProjectUniqueId()));
 		treeWrapperBuilder.addReference(projectSyncObjectBuilder.buildVariantRuleReferenceWithUniqueId(unconfigured));
 
-		// Verarbeite alle BOM-Wurzelknoten
+		// Process all BOM root nodes
 		for (BomNode bomRoot : nodes)
 		{
 			processBomNode(bomRoot, null, treeWrapperBuilder, projectSyncObjectBuilder);
@@ -136,8 +136,7 @@ public class ImportService
 		BomItem item = bomNode.getItem();
 		NodeSyncObjectBuilder currentNode;
 
-		// Erstelle den Node – wenn es keinen übergeordneten Knoten gibt,
-		// arbeite über den treeWrapperBuilder
+		// Create the node – if there is no parent node, use the treeWrapperBuilder
 		if (parentNode == null)
 		{
 			currentNode = treeWrapperBuilder.findOrCreateChildNode(item.getPartId(), item.getPartId(), item.getComponent());
@@ -147,25 +146,23 @@ public class ImportService
 			currentNode = parentNode.findOrCreateChildNode(item.getPartId(), item.getPartId(), item.getComponent());
 		}
 
-		// Erstelle das Part und weise die Beschreibung zu
+		// Create the part and assign the description
 		PartSyncObjectBuilder partBuilder = treeWrapperBuilder.findOrCreatePart(item.getPartId())
 			.description(item.getDescription());
 
-		// Schreibe benutzerdefinierte Attribute
+		// Write custom attributes
 		MetaAttributesWriter.writeAttributeValue(partBuilder, "ADSMETA_Supplier", item.getSupplier());
 		MetaAttributesWriter.writeAttributeValue(partBuilder, "ADSMETA_Material", item.getMaterial());
 
-		// Erstelle Part-Version und Part-View
+		// Create part version and part view
 		PartVersionSyncObjectBuilder partVersion = partBuilder.findOrCreatePartVersion("v1");
 		PartViewSyncObjectBuilder partView = partVersion.findOrCreatePartView();
 
-		// add document
-
-		// Füge die Referenzen zwischen Node und Part-View hinzu
+		// Add references between the node and the part view
 		treeWrapperBuilder.addReference(partView.buildNodeReference(currentNode));
 		treeWrapperBuilder.addReference(currentNode.buildPartViewReference(partView));
 
-		// Verarbeite rekursiv alle Kinder dieses Knotens
+		// Recursively process all children of this node
 		for (BomNode child : bomNode.getChildren())
 		{
 			processBomNode(child, currentNode, treeWrapperBuilder, projectSyncObjectBuilder);
