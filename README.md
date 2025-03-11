@@ -9,7 +9,7 @@ it will be consumed and imported by the explore platform.
 ### Purpose
 This howto aims to provide external developers with a practical example demonstrating how to prepare data and upload it to 
 the explore platform using the importer-client library within a Java service built with Quarkus.
-For more information on Quarkus, please refer to the [Quarkus.md](Quarkus.md) file.
+For more information on Quarkus, please refer to the [Quarkus website](https://quarkus.io/).
 
 ### Target Audience
 This documentation is intended for developers, software engineers and technical professionals 
