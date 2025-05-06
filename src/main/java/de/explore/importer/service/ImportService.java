@@ -136,7 +136,8 @@ public class ImportService
 		BomItem item = bomNode.getItem();
 		NodeSyncObjectBuilder currentNode;
 
-		// Create the node – if there is no parent node, use the treeWrapperBuilder
+		// Create the node – if there is no parent node, use the
+		// treeWrapperBuilder
 		if (parentNode == null)
 		{
 			currentNode = treeWrapperBuilder.findOrCreateChildNode(item.getPartId(), item.getPartId(), item.getComponent());
