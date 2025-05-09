@@ -17,7 +17,7 @@
         <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
         <quarkus.platform.version>3.19.4</quarkus.platform.version>
         <skipITs>true</skipITs>
-        <surefire-plugin.version>3.5.2</surefire-plugin.version>
+        <surefire-plugin.version>3.5.3</surefire-plugin.version>
         <hamcrest.version>3.0</hamcrest.version>
         <apache.csv.version>1.14.0</apache.csv.version>
         <import.client.version>1.1.0-SNAPSHOT</import.client.version>
