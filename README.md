@@ -11,9 +11,6 @@ This documentation outlines how to implement a **basic importer service** using
 Pattern. It demonstrates how to integrate the provided `importer-client` library
 to seamlessly import data into the explore platform.
 
-A working reference implementation is available in our GitHub repository:  
-👉 [GitHub – Basic Importer Service](https://github.com/explore-de/basic-importer)
-
 We recommend **forking** this repository and customizing it to fit your specific
 requirements.
 
