@@ -199,12 +199,9 @@ simplifies
 the process by providing APIs to transform, validate, and transmit the
 hierarchical data tree to the PLM system.
 
-:::info
-
-To get access to our Java SDK, you need to configure our **Maven repository**.
-Please contact your Customer Success Manager to get your personal credentials.
-
-:::
+> [!NOTE]
+> To get access to our Java SDK, you need to configure our **Maven repository**.
+> Please contact your Customer Success Manager to get your personal credentials.
 
 To include the library in your project, add the following dependency to your `pom.xml`:
 
