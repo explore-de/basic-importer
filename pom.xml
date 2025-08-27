@@ -110,6 +110,29 @@
     </dependencies>
     <build>
         <plugins>
+        <!-- Enforce a specific Maven version -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-enforcer-plugin</artifactId>
+            <version>3.3.0</version>
+            <executions>
+                <execution>
+                    <id>enforce-maven-version</id>
+                    <goals>
+                        <goal>enforce</goal>
+                    </goals>
+                    <configuration>
+                        <rules>
+                            <requireMavenVersion>
+                                <version>[3.8.6,)</version>
+                                <message>Maven 3.8.6 or newer is required.</message>
+                            </requireMavenVersion>
+                        </rules>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+        <!-- Existing plugins -->
             <plugin>
                 <groupId>${quarkus.platform.group-id}</groupId>
                 <artifactId>quarkus-maven-plugin</artifactId>
