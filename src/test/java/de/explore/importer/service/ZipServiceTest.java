@@ -26,16 +26,6 @@ class ZipServiceTest
 	@Inject
 	ZipService zipService;
 
-	@BeforeEach
-	void setUp()
-	{
-	}
-
-	@AfterEach
-	void tearDown()
-	{
-	}
-
 	@Test
 	void shouldReadZipFileAndReturnMap()
 	{

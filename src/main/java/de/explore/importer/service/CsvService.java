@@ -28,7 +28,7 @@ public class CsvService
 				.setHeader("Level", "Part ID", "Component", "Description", "Quantity", "Material", "Supplier", "Unit Cost", "Total Cost", "3D Modell")
 				.setSkipHeaderRecord(true)
 				.setDelimiter(',')
-				.build();
+				.get();
 
 			Iterable<CSVRecord> records = format.parse(isr);
 

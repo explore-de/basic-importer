@@ -30,11 +30,6 @@ class ImportServiceTest
 	@Inject
 	CsvService csvService;
 
-	@BeforeEach
-	void setUp() throws IOException
-	{
-	}
-
 	@Test
 	void shouldTraverseAllBomNodes()
 	{

@@ -17,6 +17,7 @@ public class BomItem
 
 	public BomItem()
 	{
+		// no args constructor for serialization
 	}
 
 	public BomItem(int level, String partId, String component, String description, int quantity, String material, String supplier, double unitCost, double totalCost, String model3D)

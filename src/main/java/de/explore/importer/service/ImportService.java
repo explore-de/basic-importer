@@ -34,6 +34,7 @@ import java.util.List;
 public class ImportService
 {
 	private static final Logger LOG = LoggerFactory.getLogger(ImportService.class);
+
 	private final ImporterClient importerClient;
 	private final String avroBucket;
 	private final AvroProducerConfig avroProducerConfig;
