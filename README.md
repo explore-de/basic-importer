@@ -1,64 +1,158 @@
-# Example importer service
+# Basic Importer Service
 
-This project showcases how to import a basic BOM structure into the explore 
-platform. It sends the pre-built BOM tree structure to a Kafka topic, where 
-it will be consumed and imported by the explore platform.
+> [!IMPORTANT]
+> This `README.md` is a copy of the official documentation that is also shipped 
+> with your explore instance.
 
-## Introduction
+## Introduction and Overview
 
-### Purpose
-This howto aims to provide external developers with a practical example demonstrating how to prepare data and upload it to 
-the explore platform using the importer-client library within a Java service built with Quarkus.
-For more information on Quarkus, please refer to the [Quarkus website](https://quarkus.io/).
+This documentation outlines how to implement a **basic importer service** using
+**Java** and **Quarkus** following the <GlossaryCard term="Ambassador" />
+Pattern. It demonstrates how to integrate the provided `importer-client` library
+to seamlessly import data into the explore platform.
+
+A working reference implementation is available in our GitHub repository:  
+👉 [GitHub – Basic Importer Service](https://github.com/explore-de/basic-importer)
+
+We recommend **forking** this repository and customizing it to fit your specific
+requirements.
+
+The service uses a CSV file as input. This is just an example, but you can
+easily adapt it to your own use case, e.g. by using a database or a third party
+REST API.
 
 ### Target Audience
-This documentation is intended for developers, software engineers and technical professionals 
-who are looking to integrate the importer-client library into their Java services.
 
-### Requirements
+This documentation is intended for developers, software engineers, and technical
+professionals who are looking to integrate the importer-client library into
+their Java services.
 
-Before starting, ensure that you have the following tools installed and configured on your system:
+## System Overview
 
-- **Java**: JDK 21 or later is recommended.
-- **Git**: For version control and repository management.
-- **Maven**: For building the project and managing dependencies.
-- **Quarkus CLI (optional)**: For running the application in development mode.
+This chapter provides a high-level overview of the system architecture for our
+basic importer service, which is built with Quarkus and leverages the
+importer-client library for data importation. 
 
-## Overview of the Example Service
+The architecture of the importer service is designed to seamlessly integrate
+data from a source system into the Explore platform. The following diagram
+illustrates the high-level flow and key components of the system:
 
-The example service is designed to create a hierarchical tree representation of a train based on input CSV data. It processes files that list various train components, organizes them according to their levels, and transforms the raw data into a format suitable for import into the Explore platform via the client.
+![import-service-architecture.svg](import-service-architecture.svg)
 
-### Architecture Overview
+### Data Ingestion from Source System
 
-![Architecture Diagram](import-service-architecture.svg "Architecture Diagram")
+The service receives data from an external source system. This data includes:
 
-The architecture of the importer service is designed to seamlessly integrate data from a source system into the Explore platform. 
-The following diagram illustrates the high-level flow and key components of the system:
+- A CSV file containing structured BOM data.
+- Accompanying 3D CAD files.
 
-1. **Data Ingestion from Source System**  
-   The service receives data from an external source system. This data includes:
-   - A CSV file containing structured BOM data.
-   - Accompanying 3D CAD files.
+### Data Processing and Transformation
 
-2. **Data Processing and Transformation**  
-   The service processes the incoming data by:
-   - Extracting and parsing the CSV file.
-   - Transforming the CSV data into a hierarchical tree structure, adhering to an AP-242-like format.
-   - Preparing the 3D CAD files for storage.
+The service processes the incoming data by:
 
-3. **Data Distribution via Kafka**  
-   Once the hierarchical tree is constructed, the service publishes the tree data to a Kafka topic. This asynchronous communication channel allows the PLM system to consume and process the data efficiently.
+- Extracting and parsing the CSV file.
+- Transforming the CSV data into a hierarchical tree structure, adhering to
+  the [explore Data Model](../../concept/Concept/03_data-model.mdx)
+- Preparing the 3D CAD files for storage.
 
-4. **Storing 3D CAD Files in Object Storage**  
-   The accompanying 3D CAD files are uploaded to an object storage solution (MinIO), ensuring scalable and reliable storage for large binary assets.
+### Data Distribution via Kafka
 
-#### Key Components
+Once the hierarchical tree is constructed, the service **publishes the tree data
+to a Kafka topic**. This asynchronous communication channel allows downstream
+services of explore to consume the data more efficiently.
 
-- **Importer Service**: Orchestrates the entire data ingestion, transformation, and distribution process.
-- **Source System**: The origin of the data to be imported.
-- **Kafka Topic**: Serves as the messaging backbone for transmitting the hierarchical tree data to the PLM system.
-- **PLM System**: Consumes the structured data from Kafka to integrate into the product lifecycle management process.
-- **Object Storage (MinIO)**: Handles the storage of 3D CAD files, offering efficient access and scalability.
+You don't need to manage the Kafka connection manually in your code.  
+The **explore SDK** handles all necessary Kafka integration, so you can focus
+entirely on building and structuring the data. See
+[ImportRessource.java](https://github.com/explore-de/basic-importer/blob/1f5716a9c75bad447ed2ba88d32e5c9f8b5777db/src/main/java/de/explore/importer/rest/ImporterResource.java#L77-L85)
+for an example. The `de.explore.importer.service.ImportService` does the heavy
+lifting.
+
+```Java
+// import de.explore.importer.service.ImportService
+importService.sendAvroTreeToPlm(avroTreeWrapper, projectSyncObjectBuilder);
+```
+
+### Storing 3D CAD Files in Object Storage
+
+The accompanying 3D CAD files are uploaded to an S3 compatible object storage
+service. This allows downstream services to access the files directly without
+having to download them from the importer service. The SDK takes care, that the
+Document objects are created properly (see
+[explore Data Model](../../concept/Concept/03_data-model.mdx)).
+
+```Java
+// import de.explore.importer.service.ImportService
+importService.uploadToFileService(filename, bytes, id);
+```
+
+## Setup and Prerequisites
+
+This chapter guides you through the initial setup required to run the sample
+service, including all necessary prerequisites and instructions for accessing
+the project code hosted in our GitHub repository.
+
+### Prerequisites
+Before you begin, ensure that you have the following installed on your development machine:
+
+- Java Development Kit (JDK): Version 21 or later.
+- Maven: For managing project dependencies and building the application.
+- Git: To clone the repository from GitHub.
+- Quarkus CLI (optional): For running the application in development mode.
+
+These tools are essential to compile, build, and run the sample service.
+
+### Cloning the GitHub Repository
+
+The complete source code for this sample implementation is available in our
+GitHub repository:
+[GitHub Example Importer Service](https://github.com/explore-de/basic-importer).
+To clone the repository, execute the following command in your terminal:
+
+```shell
+git clone git@github.com:explore-de/basic-importer.git
+```
+
+or
+```shell
+git clone https://github.com/explore-de/basic-importer.git
+```
+
+### Environment Setup and Build
+
+After cloning the repository, navigate to the project directory:
+
+```shell
+cd basic-importer
+```
+
+and build the project with Maven:
+
+```shell
+mvn clean install
+```
+
+This command compiles the code, runs any tests, and packages the application.
+Once the build is successful, you can start the service using Quarkus in
+development mode:
+
+```shell
+mvn quarkus:dev
+```
+
+### Development Environment
+
+While the command-line tools are enough for building and running the service,
+you are free to use your preferred Integrated Development Environment
+(IDE) such as IntelliJ IDEA.
+
+## Detailed Explanation of the Code
+
+The basic-importer-service is designed to create a hierarchical tree
+representation of a train based on input CSV data. It processes files that list
+various train components, organizes them according to their levels, and
+transforms the raw data into a format suitable for import into the explore
+platform via the Java SDK.
 
 ### Sample Data Format
 
@@ -83,32 +177,37 @@ Level,Part ID,Component,Description,Quantity,Material,Supplier,Unit Cost,Total C
 3,LO-001-13,Kühlmittelpumpe,Zirkuliert Kühlmittel,1,Steel/Plastic,PumpTech,4000,4000,CAD_LO-001-13.cad
 ```
 
-*Note: Actual CSV files might vary slightly in content or structure depending on specific project requirements.*
+*Note: Actual CSV files might vary slightly in content or structure depending on
+specific project requirements.*
 
-### Additional Information
+#### Additional Information
 
-The complete `train-bom.csv` file, which contains all the train components data used in this example, can be found in the 
-test resources folder of the project. This file is useful for testing and validating the import process.
+The complete `train-bom.csv` file, which contains all the train components data
+used in this example, can be found in the test resources folder of the project.
+This file is useful for testing and validating the import process.
 
-### Data Transformation: AP-242-Like Format
+#### Data Transformation
 
-The raw CSV data must be transformed into a format that aligns with the AP-242 standard.
-This process involves mapping the various data fields—such as component hierarchy, part numbers, descriptions, and technical details—to an AP-242-like structure.
+The raw CSV data must be transformed into a format that aligns with explor's
+data model
+(see [Data Model](../../concept/Concept/03_data-model.mdx). The client SDK
+offers ready-to-use Java classes for this purpose. They all end with
+`SyncObjectBuilder` and offer a fluent API.
 
-**What is AP-242?**  
-AP-242, also known as ISO 10303-242, is an international standard for the digital representation and exchange of product data. 
-It is widely used in industries such as aerospace and automotive to ensure consistency and interoperability when sharing complex 3D models and associated metadata.
+### Using the Java SDK
 
-By converting the CSV data into an AP-242-like format, we facilitate seamless integration with systems that expect data to be structured in a standardized, industry-accepted manner.
+For the import of data into the Explore platform,
+the [import.client](35_importer-client.md) library is used. This library
+simplifies
+the process by providing APIs to transform, validate, and transmit the
+hierarchical data tree to the PLM system.
 
-## Data Processing Workflow
+:::info
 
-### Using the importer.client Library
+To get access to our Java SDK, you need to configure our **Maven repository**.
+Please contact your Customer Success Manager to get your personal credentials.
 
-For the import of data into the Explore platform, the `importer.client` library is used. 
-This library simplifies the process by providing APIs to transform, validate, and transmit the hierarchical data tree to the PLM system.
-
-#### Maven Dependency
+:::
 
 To include the library in your project, add the following dependency to your `pom.xml`:
 
@@ -120,33 +219,48 @@ To include the library in your project, add the following dependency to your `po
 </dependency>
 ```
 
-### Import Steps
+The basic-importer-service processes incoming data through the following steps:
 
-The example service processes incoming data through the following steps:
+##### 1. Project Verification and Creation
 
-1. **Project Verification and Creation**  
-   Upon receiving the request, the service checks if a project with the provided name (sent along with the ZIP file) already exists. 
-   If it does, that project is used for the current import. Otherwise, a new project is created to serve as a container for all data related to the import session.
+Upon receiving the request, the service checks if a project with the provided
+name (sent along with the ZIP file) already exists. If it does, that project is
+used for the current import. Otherwise, a new project is created to serve as a
+container for all data related to the import session.
 
-2. **Zip Extraction and CSV Parsing**  
-   The service exposes a REST endpoint that accepts a ZIP file. This ZIP file contains:
-   - A `train-bom.csv` file, which holds the bill of materials (BOM) for the train.
-   - Exemplary CAD files arranged in a flat structure.
-   
-   Once the ZIP file is received, the service extracts its contents and parses the `train-bom.csv` file to read the component data and build an initial data structure.
+##### 2. Zip Extraction and CSV Parsing
 
-3. **Building the Hierarchical Tree and Importing Data**  
-   Using the importer-client library, the service transforms the parsed CSV data into a hierarchical tree that represents the train's assembly. 
-   This structured tree is then sent to the PLM (Product Lifecycle Management) system, ensuring that the imported data conforms to the required standards.
-   After constructing the hierarchical tree and completing the import process, the final data is serialized into the Apache Avro format. 
-   Apache Avro is a data serialization system that offers a compact, fast, and binary data format ideal for storing and exchanging large volumes of structured data.
-   [Apache Avro](https://avro.apache.org/)
+The service exposes a REST endpoint that accepts a ZIP file. This ZIP file
+contains:
 
-4. **Uploading CAD Files**  
-   After processing the BOM data, the service uploads the accompanying 3D CAD files to the file service.
-   This step ensures that all digital assets are properly stored and linked to the corresponding components in the PLM system.
+- A `train-bom.csv` file, which holds the bill of materials (BOM) for the train.
+- Exemplary CAD files arranged in a flat structure.
 
-## Further Documentation
+Once the ZIP file is received, the service extracts its contents and parses the
+`train-bom.csv` file to read the component data and build an initial data
+structure.
 
-The client library is available on the Explore GitLab repository, where you can find detailed documentation. 
-For any additional information or specific inquiries regarding its usage and integration, please reach out to the Explore development team.
+##### 4. Building the Hierarchical Tree and Importing Data
+
+Using the Java SDK, the service transforms the parsed CSV data into a
+hierarchical tree that represents the train's assembly. This structured tree is
+then sent to the explore system, ensuring that the imported data conforms to the
+required data model. After constructing the hierarchical tree and completing the
+import process, the final data is serialized into
+the <GlossaryCard term="Apache Avro" /> format.
+
+Apache Avro is a data serialization system that offers a compact, fast, and
+binary data format ideal for storing and exchanging large volumes of structured
+data (see
+[Apache Avro](https://avro.apache.org/)).
+
+> [!IMPORTANT]
+> The serialization and the sending of the Avro data to Kafka is handled by the
+explore SDK. Yet it is important to understand the underlying concepts and how
+they are used in the service.
+
+##### 4. Uploading CAD Files
+
+After processing the BOM data, the service uploads the accompanying 3D CAD files
+to the file service. This step ensures that all digital assets are properly
+stored and linked to the corresponding components in the PLM system.
