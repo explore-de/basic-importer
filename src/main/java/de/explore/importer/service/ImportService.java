@@ -1,6 +1,17 @@
 package de.explore.importer.service;
 
-import de.exentra.ads.avro.generated.AvroTreeWrapper;
+import java.io.IOException;
+import java.util.List;
+
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.ws.rs.BadRequestException;
+import jakarta.ws.rs.InternalServerErrorException;
+
+import org.eclipse.microprofile.config.Config;
+import org.eclipse.microprofile.config.ConfigProvider;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import de.exentra.explore.plm.avro.MetaAttributesWriter;
 import de.exentra.explore.plm.avro.NodeSyncObjectBuilder;
 import de.exentra.explore.plm.avro.OemType;
@@ -10,6 +21,8 @@ import de.exentra.explore.plm.avro.PartViewSyncObjectBuilder;
 import de.exentra.explore.plm.avro.ProjectSyncObjectBuilder;
 import de.exentra.explore.plm.avro.TreeWrapperBuilder;
 import de.exentra.explore.plm.avro.VariantRuleSyncObjectBuilder;
+
+import de.explore.ads.avro.generated.AvroTreeWrapper;
 import de.explore.importer.client.ImporterClient;
 import de.explore.importer.client.ImporterClientBuilder;
 import de.explore.importer.client.dto.Project;
@@ -17,18 +30,9 @@ import de.explore.importer.client.exception.ImporterClientException;
 import de.explore.importer.client.kafka.AvroProducerConfig;
 import de.explore.importer.model.BomItem;
 import de.explore.importer.model.BomNode;
-import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.ws.rs.BadRequestException;
-import jakarta.ws.rs.InternalServerErrorException;
-import okhttp3.ResponseBody;
-import org.eclipse.microprofile.config.Config;
-import org.eclipse.microprofile.config.ConfigProvider;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import retrofit2.Response;
 
-import java.io.IOException;
-import java.util.List;
+import okhttp3.ResponseBody;
+import retrofit2.Response;
 
 @ApplicationScoped
 public class ImportService

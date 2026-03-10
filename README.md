@@ -194,7 +194,7 @@ offers ready-to-use Java classes for this purpose. They all end with
 ### Using the Java SDK
 
 For the import of data into the Explore platform,
-the [import.client](35_importer-client.md) library is used. This library
+the [importer-client](35_importer-client.md) library is used. This library
 simplifies
 the process by providing APIs to transform, validate, and transmit the
 hierarchical data tree to the PLM system.
@@ -208,8 +208,8 @@ To include the library in your project, add the following dependency to your `po
 ```xml
 <dependency>
     <groupId>de.explore</groupId>
-    <artifactId>import.client</artifactId>
-    <version>${import.client.version}</version>
+    <artifactId>importer-client</artifactId>
+    <version>${importer-client.version}</version>
 </dependency>
 ```
 

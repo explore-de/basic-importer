@@ -20,7 +20,7 @@
         <surefire-plugin.version>3.5.3</surefire-plugin.version>
         <hamcrest.version>3.0</hamcrest.version>
         <apache.csv.version>1.14.1</apache.csv.version>
-        <import.client.version>1.1.0-SNAPSHOT</import.client.version>
+        <importer-client.version>1.2.2</importer-client.version>
     </properties>
 
     <dependencyManagement>
@@ -87,8 +87,8 @@
         </dependency>
         <dependency>
             <groupId>de.explore</groupId>
-            <artifactId>import.client</artifactId>
-            <version>${import.client.version}</version>
+            <artifactId>importer-client</artifactId>
+            <version>${importer-client.version}</version>
         </dependency>
         <!-- Test -->
         <dependency>

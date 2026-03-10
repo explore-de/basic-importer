@@ -1,12 +1,9 @@
 package de.explore.importer.rest;
 
-import de.exentra.ads.avro.generated.AvroTreeWrapper;
-import de.exentra.explore.plm.avro.ProjectSyncObjectBuilder;
-import de.explore.importer.dto.StartImportMultipartDTO;
-import de.explore.importer.model.BomNode;
-import de.explore.importer.service.CsvService;
-import de.explore.importer.service.ImportService;
-import de.explore.importer.service.ZipService;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+
 import jakarta.inject.Inject;
 import jakarta.ws.rs.BadRequestException;
 import jakarta.ws.rs.Consumes;
@@ -15,12 +12,18 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import de.exentra.explore.plm.avro.ProjectSyncObjectBuilder;
+
+import de.explore.ads.avro.generated.AvroTreeWrapper;
+import de.explore.importer.dto.StartImportMultipartDTO;
+import de.explore.importer.model.BomNode;
+import de.explore.importer.service.CsvService;
+import de.explore.importer.service.ImportService;
+import de.explore.importer.service.ZipService;
 
 @Path("/import")
 public class ImporterResource

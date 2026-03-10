@@ -1,25 +1,28 @@
 package de.explore.importer.service;
 
-import de.exentra.ads.avro.generated.AvroTreeWrapper;
-import de.exentra.explore.plm.avro.OemConfiguration;
-import de.exentra.explore.plm.avro.OemType;
-import de.exentra.explore.plm.avro.ProjectSyncObjectBuilder;
-import de.explore.importer.model.BomNode;
-import io.quarkus.test.junit.QuarkusTest;
-import jakarta.inject.Inject;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.List;
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.emptyIterable;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
 import static org.hamcrest.Matchers.notNullValue;
 import static org.junit.jupiter.api.Assertions.fail;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.List;
+
+import jakarta.inject.Inject;
+
+import io.quarkus.test.junit.QuarkusTest;
+
+import org.junit.jupiter.api.Test;
+
+import de.exentra.explore.plm.avro.OemConfiguration;
+import de.exentra.explore.plm.avro.OemType;
+import de.exentra.explore.plm.avro.ProjectSyncObjectBuilder;
+
+import de.explore.ads.avro.generated.AvroTreeWrapper;
+import de.explore.importer.model.BomNode;
 
 @QuarkusTest
 class ImportServiceTest
