@@ -92,7 +92,7 @@ the project code hosted in our GitHub repository.
 ### Prerequisites
 Before you begin, ensure that you have the following installed on your development machine:
 
-- Java Development Kit (JDK): Version 21 or later.
+- Java Development Kit (JDK): Version 25 or later.
 - Maven: For managing project dependencies and building the application.
 - Git: To clone the repository from GitHub.
 - Quarkus CLI (optional): For running the application in development mode.
